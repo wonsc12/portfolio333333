@@ -1,0 +1,30 @@
+<div id="adminheader">
+    <div class="samsung3">
+         <div class="center2">
+             <div class="logo">
+                 <h2><a class="logoturn" href="/">턴플<br>
+                     스토어</a>
+                 </h2>
+             </div>
+             <div class="menu">
+                 <ul class="gnbb">
+                     <li class="on"><a href="/menu/apple">APPLE</a></li>
+                     <li><a href="/store">매장안내</a></li>
+                     <li><a href="/event">EVENT</a></li>
+                     <li><a href="/brdlist">공지</a></li>
+                     <li><a href="/Inquire">문의하기</a></li>   
+                 </ul>
+             </div>
+             <div class="logia">
+                <div class="login">
+                    <% if(!userData) { %> <!-- // 회원정보프로퍼티가 없을때 -->
+                    <a class="loginuser loj" href="/login">관리자로그인</a>
+                    <% } else { %>
+                    <p class="loginfd">관리자 로그인 중..</p>
+                    <a class="loginb loj" href="/logout">로그아웃</a>
+                    <% } %> 
+                </div>
+            </div> 
+         </div>
+    </div>
+ </div>

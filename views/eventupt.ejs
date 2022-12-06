@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 수정 페이지</title>
+    <script src="/js/sideBtn.js"defer></script>
+</head>
+<body>
+    <%- include("common/admin_header.ejs") %>
+    <div class="insertcontainer">
+        <div class="adminmenu">
+            <!-- 상품등록 페이지 a / 매장등록 페이지 a -->
+                <ul class="admin_menu5">
+                    <li><a class="rdfsf" href="/admin/prdlist">상품등록페이지</a></li>
+                    <li><a class="rdfsf" href="/admin/storelist">매장등록페이지</a></li>
+                    <li><a class="rdfsf rdfsfd" href="/admin/insert">공지등록페이지</a></li>
+                    <li><a class="rdfsf sdf" href="/admin/event">이벤트등록페이지</a></li>
+                </ul>
+            </div>
+            <div class="aven">
+                <% for(let i = 0 ; i < eventData.length; i++) { %>
+                    <div class="line"><a href="/eventdetail/<%- eventData[i].num %>">
+                        
+                        <div class="wrwd">
+                            <% if(eventData[i].file) { %>
+                            <img src="/upload/<%- eventData[i].file %>">
+                            <% } else{ %>
+                            <div class="noimg">이미지 없음</div>
+                            <% } %>
+                            <div class="wrtext">
+                                <p></p><p></p>
+                            </div>
+                        </div>
+                        
+                        <div class="ones"><%- eventData[i].subject %></div>
+                        <div class="wrwd6">
+                            
+                            <div class="wrwd3"><%- eventData[i].date %></div>
+                            <div class="wrwd4">조회수:<%- eventData[i].eventviews %></div> 
+                        </div>
+                        </a>
+                    </div>
+                <% } %>
+            </div>
+        <div class="insert_center2">
+            <form id="insert_form" action="/addevent" method="post" enctype="multipart/form-data">
+                <select class="textd" name="category">
+                    <option value=>이벤트/선택</option>
+                    <option value="menuev">상품이벤트</option>
+                    <option value="storev">매장이벤트</option>
+                </select>   
+                <div class="name teq">
+                    <input class="put" id="subject" type="text" name="subject" placeholder="주제">
+                </div>
+                <div class="name teq">
+                    <input class="put" id="date" type="text" name="date" placeholder="날짜">
+                </div>
+                <textarea class="area"name="context" placeholder="내용 입력"></textarea>
+                <div class="filebox">
+                    <input class="file" type="file" name="file">
+                    <input class="file" type="file" name="file">
+                </div>
+                <div class="btnss">
+                    <button class="btn qws" type="submit">작성하기</button>
+                    <button class="btn qwq" type="button">취소</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include("common/footer.ejs") %>
+    <script>
+        const cancel = document.querySelector(".qwq");
+            cancel.addEventListener("click",function(){
+            // 취소버튼 누루면 /list 경로로 요청
+            location.href = "/brdlist"; 
+        });
+    </script>   
+</body>
+</html>

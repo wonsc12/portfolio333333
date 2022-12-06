@@ -1,0 +1,2481 @@
+* { margin:0 ;padding:0;}
+    ul,li,ol { list-style:none;}
+    a { text-decoration:none;}
+    img,video { vertical-align:middle;}
+    table {border-collapse:collapse;}
+    input,select,textarea { outline:0;}
+    textarea { resize:none;}
+    body { line-height:1; overflow-x: hidden;} 
+
+
+    .admin { margin-top: 200px; 
+        .logi2 {  display: flex; justify-content: center;
+            h2{font-size: 75px;}
+        }
+        .adminlogin { width: 1100px; margin: 0 auto; text-align: center;
+            
+            .adminbox {
+                .adminin { width: 800px; height: 80px;  margin-top: 98px; padding-left: 15px; font-size: 30px;}
+             }
+            
+            .adminbtn { margin-top: 100px;  display: flex; justify-content: center; align-items: center;    
+                .butt{ margin-top: 100px;
+                    width: 220px; height: 80px; background-color: #fff; border: none;
+                    margin: 0 20px; font-size: 30px; border: 1px solid #000; 
+                    &:hover { background-color: #000; color: #fff;}
+                }
+            }
+        }
+    }
+
+    // 관리자 공지 이벤트 매장 상품 
+
+    .adminmenu { display: flex; justify-content: center;
+        .admin_menu5 { display: flex; margin-bottom: 50px;
+            li { line-height: 100px; margin: 0 50px;
+                .rdfsf {font-size: 30px; color: #000; opacity: 0.3;
+                    
+                }
+                .sdf{ color: #000; opacity: 1; font-weight: bold;}
+                
+            
+            }
+        }
+    }
+    // 풋터 
+
+    .footer { background-color: #000;  padding: 60px 0;
+        .foo {  display: flex; width: 1280px; justify-content: space-between; margin: 0 auto;
+            .footop { 
+                h2 { color: #fff; margin-bottom: 30px;}
+                p{ color: #fff;}
+            }
+            .fooleft {
+                .gnb { display: flex;
+                    li {  margin: 0 20px;
+                        a {color: #fff;}
+                    }
+                }
+            }
+        }
+        .foobot { width: 1280px; margin: 0 auto; display: flex; justify-content: center;
+            .menu2 { 
+                li {  margin: 50px 15px;
+                    a { color: #fff; font-size: 20px;}
+                }
+            }
+        }
+        .footend { width: 1280px; border-top :1px solid #fff;  margin: 0 auto;
+            p { color: #fff; line-height: 30px; margin-top: 20px;
+
+            }
+        }
+        
+    }
+// 관리자 페이지 헤더 
+#adminheader {
+    .samsung3 {  display: flex; justify-content: space-between;
+        .center2 { margin: 0 auto;  width: 100%;background-color: #fff;  position: relative; 
+
+                    box-shadow: 0px 3px 10px rgba(0,0,0,0.4) ; transition: all 1s; z-index: 10;
+                    display: flex; justify-content: center; align-items: center;
+                 
+            .logo { display: flex; align-items: center; text-align: center;
+                h2 { 
+                    a{ color: #000;}
+                }
+            }
+            .gnbb { display: flex; justify-content: center; text-align: center;
+                
+                > li { margin: 0 20px; line-height: 80px; width: 100px; background-color: #fff;
+                    
+                    
+                    
+                    a { text-align: center; color: #000;  }
+                }  
+            }
+            .logia { background-color: #fff; display: flex; justify-content: center; margin-left: 50px;
+                .login { display: flex; justify-content: flex-end;
+                    .loginuser { font-weight: bold; font-size: 30px; }
+                    .loginfd { font-weight: bold; font-size: 30px;}
+                    .loginb { color: #000; display: block; display: flex; align-items: center;}
+                }  
+            }      
+        }   
+    }
+}
+
+    // 회원정보 수정페이지
+
+.updateform { width: 730px; margin: 100px auto; border: 1px solid #adb5bd; 
+    .userid { width: 400px; height: 50px; font-size: 40px; margin: 20px 0 20px 15px;}
+    .useridbox {    position: relative; margin-bottom: 10px;
+        .label {margin-bottom: 25px;padding-left: 15px;}
+        
+        .userbox {text-align: center;
+            .users { width: 95%; height: 46px;margin-bottom: 35px; padding-left: 15px;}}
+        .message { position: absolute;left: 16px; bottom: 7px;}
+    }
+    .userbox.ok .users, .line.ok .chk2{border:1px solid #00c850; }
+    .userbox.no .users, .line.no .chk2{border:1px solid red;}   
+    .useridbox.ok .userbox {}
+    .useridbox.no .userbox {}
+    .btn {border:1px solid #adb5bd; width: 144px; height: 54px;  color: #000; background-color: #fff; border-radius: 20px; margin: 50px 10px;
+        &:hover { color: #fff; background-color: #000;}
+    }
+    
+    
+}
+.textfo { display: flex; justify-content: center;  margin-top: 120px;
+    h2 {}
+}
+    
+
+    //// 관리자 글 작성 페이지
+
+     .insertcontainer { margin: 300px auto; 
+        
+        .insert_center2 { width: 1100px; margin: 100px auto;
+            .name {
+                .put { width: 50%; height: 40px; margin: 10px 0; padding-left:  15px;
+
+                }
+                
+                
+            }
+            .area { width: 100%; height: 250px; resize: none; padding: 15px 0 0 15px;}
+                .filebox { margin-top: 20px;
+                    .file { border: none; width: 150px; height: 50px;}
+                }
+                .btnss {
+                    .btn { border: none; width: 150px; height: 50px; background-color: #fff; }
+                    .qws { color: #000; border: 1px solid #adb5bd; 
+                        &:hover { background-color: #000; color: #fff;}
+                    }
+                    .qwq { color: #000; border: 1px solid #adb5bd; 
+                        &:hover { background-color: #000; color: #fff;}}
+                }
+
+        }
+     }
+     // header2
+
+     #header2 { width:100%;   
+
+        
+        
+        .samsung2 {  
+            .center2 { margin: 0 auto;  width: 100%;background-color: #fff;  position: relative; 
+    
+                        box-shadow: 0px 3px 10px rgba(0,0,0,0.4) ; transition: all 1s; z-index: 10;
+                        display: flex; justify-content: center; align-items: center;
+                     
+                .logo { display: flex; align-items: center; text-align: center;
+                    h2 { 
+                        a{ color: #000;}
+                    }
+                }
+                .gnbb { display: flex; justify-content: center; text-align: center;
+                    
+                    > li { margin: 0 20px; line-height: 80px; width: 100px; background-color: #fff;
+                        
+                        
+                        
+                        a { text-align: center; color: #000;  }
+                    }  
+                }
+                .logia { background-color: #fff; display: flex; justify-content: center;
+                    .center { 
+                        .login { display: flex; justify-content: flex-end;
+                            .condition { display: flex; align-items: center;
+                                .loj { line-height: 80px; color: #000; margin-right: 40px; }
+                                .arr { color:#000; }
+                                .loginuser { }
+                                .logina {}
+                                .name { 
+                                    a {color: #000;}
+                                }
+                                .loginb { 
+                                    
+                                }
+                                .dsf {
+                                    color: #000;
+                                    &::after { content: ""; margin: 0 10px;
+                                        display: inline-block; width: 1px; height: 12px; background-color: #000;}
+                                }
+                            }
+                        }
+                    } 
+                }
+                .btn { display: none; position: absolute; right:30px;top:50%; transform: translateY(-50%);
+                    .line{ margin: 6px; display: block; width: 40px; height: 2px; background-color: #000;transition: all 0.5s;}
+        
+                }
+                .btn.chg .top {position: absolute; left:0 ;top:0;transform:rotate(45deg);}
+                .btn.chg .mid {transform: translateX(10px);opacity: 0;}
+                .btn.chg .bot {position: absolute; left:0 ;bottom:0;transform:rotate(-45deg);}
+                
+                
+            }
+            .sideM{ z-index: 55; display: flex; width: 280px; height: 100vh; position: fixed;right: -280px;top: 0; background-color: #dc3545;transition: all 0.5s;
+                
+                
+                .linebtn{ position: relative; display: flex; ; flex-direction: column; 
+                    .btn2{ display: block ; position: absolute; right: 10px; top:12%; transform: translateY(-50%);
+                        .line { display: block; width: 35px; height: 2px; background-color: #fff;transition: all 0.5s;}
+                        .top2 {position: absolute; left:0 ;top:5px;transform:rotate(45deg);}
+                        .mid2 {transform: translateX(10px);opacity: 0;margin: 5px 0;}
+                        .bot2 {position: absolute; left:0 ;bottom:5px;transform:rotate(-45deg);}
+                    }
+                } 
+                .two { margin-top: 125px;
+                    li{ margin:30px 0 0 83px;
+                        span{position: relative; top: 25px; left:-27px;
+                        }
+                        a{display: block; color: #fff;}
+                    }
+                }
+                .three { 
+                    .face{ display: flex;
+                        li{margin-left: 34px;
+                            i {color: #fff;}
+                        }
+                    }
+                    p{margin:0 0 104px 34px; line-height: 34px; color: #fff; font-size: 13px;}
+                }
+            }
+            .sideM.move { right: 0;}      
+        }
+    }
+    #header.fixer{position: fixed; top:0; bottom: unset; display: block;
+        .center2 { width: 100%; border-radius: 0;}
+        
+    }
+
+    @media screen and (max-width:1200px){ 
+        #header2 { width:100%;   
+
+        
+        
+            .samsung2 {  
+                .center2 {   width: 100%;
+        
+                    .gnbb { 
+                        
+                        > li { margin: 0 10px; 
+                                   
+                        }  
+                    }   
+                }       
+            }
+        }
+    }
+    @media screen and (max-width:1024px){ 
+        #header2 { width:100%;   
+
+        
+        
+            .samsung2 {  
+                .center2 {   width: 100%; display: flex; justify-content: space-between;
+        
+                           
+                         
+                    .logo { margin-left: 50px;
+                        
+                    }
+                    .gnbb { display: none; 
+                        
+                       
+                    }
+                    .logia {  display: none; 
+                        
+                    }
+                    .spanBtn { display: block; position: absolute; right:30px;top:50%; transform: translateY(-50%);
+                        .line{ margin: 6px; display: block; width: 40px; height: 2px; background-color: #000;transition: all 0.5s;}
+            
+                    }
+                    .btn.chg .top {position: absolute; left:0 ;top:0;transform:rotate(45deg);}
+                    .btn.chg .mid {transform: translateX(10px);opacity: 0;}
+                    .btn.chg .bot {position: absolute; left:0 ;bottom:0;transform:rotate(-45deg);}
+                    
+                    
+                }
+                .sideM{  display: flex; width: 280px; height: 100vh; position: fixed;right: -280px;top: 0; background-color: #000;transition: all 0.5s;
+                    
+                    
+                    .linebtn{ position: relative; display: flex; ; flex-direction: column; 
+                        .btn2{ display: block ; position: absolute; right: 10px; top:12%; transform: translateY(-50%);
+                            .line { display: block; width: 35px; height: 2px; background-color: #fff;transition: all 0.5s;}
+                            .top2 {position: absolute; left:0 ;top:5px;transform:rotate(45deg);}
+                            .mid2 {transform: translateX(10px);opacity: 0;margin: 5px 0;}
+                            .bot2 {position: absolute; left:0 ;bottom:5px;transform:rotate(-45deg);}
+                        }
+                    } 
+                    .two { margin-top: 125px;
+                        li{ margin:30px 0 0 83px;
+                            span{position: relative; top: 25px; left:-27px;
+                            }
+                            a{display: block; color: #fff;}
+                        }
+                    }
+                    .three { margin-top: 150px;
+                        .face{ display: flex;
+                            li{margin-left: 34px;
+                                span {color: #fff;}
+                            }
+                        }
+                        p{margin:0 15px 104px 34px; line-height: 34px; color: #fff; font-size: 13px;}
+                    }
+                }
+                .sideM.move { right: 0;}      
+            }
+        }
+        #header.fixer{position: fixed; top:0; bottom: unset; display: block;
+            .center2 { width: 100%; border-radius: 0;}
+            
+        }
+    }
+
+    @media screen and (max-width:930px){ 
+        #header2 { width:100%;   
+
+        
+        
+            .samsung2 {  
+                
+                
+                .sideM.move { right: 0;}      
+            }
+        }
+        
+    }
+
+
+
+
+
+    // 이벤트 게시판
+
+    .listcontainer { 
+        .inqurecont1 {
+            .imafe {
+                img{ width: 100%; height: 100%;}
+            }
+            .text {
+                h2 { 
+
+                }
+                p {}
+            }
+        }    
+    }
+    .listcenter3 { margin: 0 auto; width: 100%;
+        .aven {width: 80%;  margin: 0 auto; 
+            .line {    margin: 50px auto; width: 60%;  position: relative; border: 1px solid #adb5bd; box-sizing: border-box; margin-bottom: 30px;
+                
+                .wrwd { width: 100%; height: 350px;
+                    img { width: 100%; height: 100%;}
+                
+                    .wrtext { position: absolute; left:23px; top:50px ; display: flex; text-align: center; align-items: center; 
+                        p{color: #fff; width: 90px; line-height: 40px; margin: 0 5px; border-radius: 10px;
+                            &:nth-child(1) { background-color: #274abb;}
+                            &:nth-child(2) { background-color: #ff0000;}
+                        }
+                    }
+                }
+                .ones1 { margin:20px 0 20px 0px; font-size: 30px; font-weight: bold;  color: #000;  line-height: 25px; display: flex; justify-content: center; align-items: center; text-align: start; }
+                .wrwd6 { text-align: center;
+                    .wrwd3 { line-height: 50px; color: #acacac;}
+                    .wrwd4 { line-height: 50px; color: #acacac;}
+                }
+                 .wrwd7 { padding-left: 20px;
+                    .wrwd5 { margin-top: 24px;
+                        .tiwd { color: #000; font-weight: bold;}
+                    }
+                    .wrwd2 { margin: 20px 0; color: #acacac;}
+                }
+                .wrwd6 {width: 95%;  display: flex; justify-content: space-between; margin: 0 auto; }
+                .btns { border: none; border: 1px solid #acacac; border-radius: 10px; width: 150px; height: 50px; background-color: #fff; color: #000; margin-bottom: 20px;
+                display: flex; align-items: center; justify-content: center;
+                }
+            }
+        }
+    }
+    // 이벤트 매장
+    .ones2 { margin:20px 0 20px 0px; font-size: 30px; font-weight: bold;  color: #000;  line-height: 25px; display: flex; justify-content: center; align-items: center; text-align: start; }
+    .ones3 { padding-left:  20px; margin:20px 0 20px 0px; font-size: 20px; font-weight: bold;  color: #000;  line-height: 25px; display: flex; justify-content: start; align-items: center; text-align: start; }
+    //이벤트 상세페이지
+    .detailcontainer {
+        .brd_centerload {  width: 1100px; margin: 100px auto; 
+            .upload { width: 100%; height: 100%;
+                img { width: 100%; height: 100%;}
+            }
+            .filebox {width: 18%;height: 44px; border: 1px solid #adb5bd; display: flex; align-items: center;padding-left: 10px;}
+            .qwer12 {margin: 45px 0;  margin-right: 20px;
+                .area { line-height: 35px;}
+                #title { font-weight: bold; font-size: 40px; }
+            }
+            .sub22 { display: flex;  margin-bottom: 30px;
+                i { margin-right: 5px; }
+                .qwer122 { display: flex; margin-right: 20px; }
+            }
+            
+        }
+    }
+// 고객매장 페이지
+    .containerstore { margin: 0 auto;
+        .searcg2d { width: 1100px;  margin: 0 auto;
+            .searmeneu { display: flex; justify-content: center; margin: 0 auto;
+                h2 {color: #000;}
+            }
+            .searc { display: flex; justify-content: center; margin-top: 50px;
+                .search3 { display: flex; align-items: center; width: 50%;
+                    .city1 {width: 150px ;height: 34px; color: #000; border: none;border: 1px solid #adb5bd; border-radius: 5px;
+                        .city1option {}
+                    }
+                    .city2 {width: 150px ;height: 34px; margin: 0 10px;color: #000;border: none;border: 1px solid #adb5bd; border-radius: 5px;}
+                    .city3 {width: 50px ;height: 34px; color: #fff; background-color: #000;border: 1px solid #adb5bd; border-radius: 5px;  border: none;}
+                    .text2 { margin-right: 20px; color:#000;}
+                }   
+            }
+            .seac {  display: flex; justify-content: center; margin-top: 30px;
+                .search4 { display: flex;width: 50%; align-items: center;
+                    .ciy4 {width: 307px ;height: 34px; margin-right: 10px; border: 1px solid #adb5bd; border-radius: 5px;}
+                    .ciy5 {width: 50px ;height: 34px; border: 1px solid #adb5bd; border-radius: 5px; border: none; background-color:#000; color: #fff;}
+                    .text3 { margin-right: 40px; color: #000;}
+                }
+            }
+        }
+        .storemune3 { width: 1100px; margin: 150px auto; text-align: center;
+            h2 { font-size: 40px; color: #000;}
+        }
+        .storelist { width: 1100px; margin: 150px auto;
+            .storebox { display: flex; text-align: center; align-items: center;
+                .ere {width: 20%;border-bottom:  1px solid #000; height: 60px;border-top:  1px solid #000; height: 50px;
+                    display: flex; justify-content: center; align-items: center; color: #000; 
+                &:nth-child(3) { width: 40%;}
+                }
+                
+            }
+            .list { display: flex; text-align: center;  align-items: center;
+                .wriw {width: 20%;border-bottom:  1px solid #000 ; height: 60px;
+                display: flex; justify-content: center; align-items: center;color: #000;}
+                .line3 { width: 40%;}
+            }
+        }
+    
+    }
+    
+// 고객 메뉴 
+.menusds { width: 1100px; margin: 0 auto;
+    .ulmenus { margin: 100px auto; border: 1px solid #adb5bd;
+        .memeus {display: flex;
+            li { width: 33.333333%; text-align: center; line-height: 50px;
+                a { color: #000;}
+                &:nth-child(2) { border-right: 1px solid #adb5bd; border-left: 1px solid #adb5bd;}
+            }
+            li.on{
+                a { font-size: 30px; color:#000; font-weight: bold;}
+            }
+        }
+    }
+}
+
+.menus { width: 1100px ; margin: 0 auto; 
+    
+    .listwrap {  margin-top: 100px; display: flex; flex-wrap: wrap; padding-bottom: 50px;
+        .lists{ display: none;  width: 30%;  margin: 1% 1.5%; border: 1px solid #acacac; background: #f7f6f3;
+            
+            .munuimage { width: 100%; height: 250px;
+                img { width: 100%; height: 100%; }
+            }
+            .textp { width: 93%; margin: 0 auto; display: flex; justify-content: center; align-items: center;
+                p { text-align: center; margin-top: 30px; font-weight: bold; line-height: 25px;}
+            }
+            .textpp { display: flex; justify-content: center; align-items: center;
+                p { text-align: center; margin: 30px 0;color: #acacac;}
+            }
+        &:nth-child(1), 
+        &:nth-child(2), 
+        &:nth-child(3){ display:block;}   
+        }
+       
+    }
+    .btnWrap { display: flex; justify-content: center; margin-bottom: 50px;
+
+        .loadMore {transition: all 1s;  font-weight: bold;  width:150px; height: 50px; color:#000; background-color: #fff; border:1px solid #acacac; border-radius: 20px;
+            &:hover { color: #fff; background-color: #000;}
+        }  
+    }     
+}
+@media screen and (max-width:1024px){ 
+    .menusds { width: 90%; margin: 0 auto;
+        
+    }
+    .menus { width: 90%; margin: 0 auto; 
+    
+        
+    }
+} 
+
+@media screen and (max-width:768px){ 
+    .menusds { width: 90%; 
+        .ulmenus { 
+            
+        }
+    }
+    
+    .menus { width: 90%; margin: 0 auto; 
+        
+        .listwrap { 
+            .lists{ display: none;  width: 90%;   margin-top: 50px;
+                
+            }
+           
+        }
+        
+    }
+} 
+
+// 매장 리스트
+@media screen and (max-width:1200px){
+    .containerstore {
+        
+        .searcg2d { width: 100%; margin: 0 auto; 
+            
+            .searc { 
+                .search3 {  width: 100%; justify-content: center;
+                    
+                }   
+            }
+            .seac {  
+                .search4 { width: 100%; justify-content: center;
+                   
+                }
+            }
+        }
+        .storemune3 { width: 100%; margin: 150px auto; text-align: center;
+            h2 { font-size: 40px; color: #000;}
+        }
+        .storelist { width: 100%; margin: 150px auto; 
+            
+        }
+    }
+}
+
+@media screen and (max-width:610px){
+
+    .containerstore {
+        
+        .searcg2d { width: 100%; 
+            .searmeneu { 
+                
+            }
+            .searc { 
+                .search3 {  width: 100%;       
+                   
+                }   
+            }
+            .seac {  
+                .search4 { width: 100%; }
+                    
+            }
+        }
+        .storemune3 { width: 100%; 
+            
+        }
+        .storediv {  width: 100%;  overflow-x: scroll;
+            white-space:nowrap ;
+           
+            .storelist {  margin: 150px auto; width: 200%;
+                .storebox { 
+                    .ere {width: 20%;border-bottom:  1px solid #000; height: 60px;border-top:  1px solid #000; height: 50px;
+                        display: flex; justify-content: center; align-items: center; color: #000; 
+                    &:nth-child(3) { width: 40%;}
+                    }
+
+                }
+                .list { 
+                    .wriw {width: 20%;border-bottom:  1px solid #000 ; height: 60px;
+                            display: flex; justify-content: center; align-items: center;color: #000;}
+                    .line3 { width: 40%;}
+                } 
+            }   
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
+    .containerstore {
+        
+        .searcg2d { width: 100%; margin: 0 auto; 
+            
+            .searc { 
+                .search3 {  width: 100%; justify-content: center;
+                    
+                }   
+            }
+            .seac {  
+                .search4 { width: 100%; justify-content: center;
+                   
+                }
+            }
+        }
+        .storemune3 { width: 100%; margin: 150px auto; text-align: center;
+            h2 { font-size: 40px; color: #000;}
+        }
+        .storelist { width: 100%; margin: 150px auto; 
+            
+        }
+    }
+}
+
+@media screen and (max-width:610px){
+
+    .containerstore {
+        
+        .searcg2d { width: 100%; 
+            .searmeneu { 
+                
+            }
+            .searc { 
+                .search3 {  width: 100%;       
+                   
+                }   
+            }
+            .seac {  
+                .search4 { width: 100%; }
+                    
+            }
+        }
+        .storemune3 { width: 100%; 
+            
+        }
+        .storediv {  width: 100%;  overflow-x: scroll;
+            white-space:nowrap ;
+           
+            .storelist {  margin: 150px auto; width: 200%;
+                .storebox { 
+                    .ere {width: 20%;border-bottom:  1px solid #000; height: 60px;border-top:  1px solid #000; height: 50px;
+                        display: flex; justify-content: center; align-items: center; color: #000; 
+                    &:nth-child(3) { width: 40%;}
+                    }
+
+                }
+                .list { 
+                    .wriw {width: 20%;border-bottom:  1px solid #000 ; height: 60px;
+                            display: flex; justify-content: center; align-items: center;color: #000;}
+                    .line3 { width: 40%;}
+                } 
+            }   
+        }
+    }
+}
+
+// 매장이벤트 
+@media screen and (max-width:1200px){
+    .listcontainer {
+        .cont2 { 
+            .cont{   width: 90%; 
+                .trbox {margin-top: 100px ; width: 100%;
+                    
+                }
+            }
+        }
+        .listcenter3 { 
+            .aven {width: 80%;  
+                .line {    width: 90%;  
+                    
+                    .wrwd { width: 100%; height: 350px;
+                       
+                    
+                        
+                    }
+                    
+                    
+                    .wrwd6 {width: 95%;  display: none;  }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:610px){
+    .listcontainer {
+        .cont2 { 
+            .cont{   width: 90%; 
+                .trbox {margin-top: 100px ; width: 100%;
+                    
+                }
+            }
+        }
+        .listcenter3 { 
+            .aven {width: 80%;  
+                .line {    width: 90%;  
+                    
+                    .wrwd { width: 100%; height: 350px;
+                       
+                    
+                        
+                    }
+                    .ones1 { font-size: 18px; padding:0 15px;}
+                    
+                    
+                    .wrwd6 {width: 95%;  display: none;  }
+                    
+                }
+            }
+        }
+    }
+
+} 
+
+// 매장이벤트 
+@media screen and (max-width:1200px){
+    .listcontainer {
+        .cont2 { 
+            .cont4{   width: 90%; 
+                .trbox {margin-top: 100px ; width: 100%;
+                    
+                }
+            }
+        }
+        .listcenter3 { 
+            .aven {width: 80%;  
+                .line {    width: 90%;  
+                    
+                    .wrwd { width: 100%; height: 350px;
+                       
+                    
+                        
+                    }
+                    
+                    
+                    .wrwd6 {width: 95%;  display: none;  }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:610px){
+    .listcontainer {
+        .cont2 { 
+            .cont{   width: 90%; 
+                .trbox {margin-top: 100px ; width: 100%;
+                    
+                }
+            }
+        }
+        .listcenter3 { 
+            .aven {width: 80%;  
+                .line {    width: 90%;  
+                    
+                    .wrwd { width: 100%; height: 350px;
+                       
+                    
+                        
+                    }
+                    .ones2 { font-size: 18px; padding:0 15px;}
+                    
+                    
+                    .wrwd6 {width: 95%;  display: none;  }
+                    
+                }
+            }
+        }
+    }
+
+} 
+// 공지글 
+@media screen and (max-width:910px){ 
+    .ones3 { font-size: 15px;}
+    
+}   
+// 공지글 
+@media screen and (max-width:610px){ 
+    .ones3 { font-size: 13px;}
+    
+}   
+// 공지글 상세페이지
+@media screen and (max-width:1200px){ 
+    .detailcontainer {
+        .brd_centerload {  width: 90%; margin: 100px auto; 
+            .qwer12 {
+                #title { font-size: 22px;}
+            }
+            
+        }
+    }
+    
+}   
+// 공지글 상세페이지
+@media screen and (max-width:610px){ 
+    .detailcontainer {
+        .brd_centerload {  width: 90%; margin: 100px auto; 
+            .qwer12 {
+                #title { font-size: 17px;}
+            }
+            
+            
+        }
+    }
+    
+}  
+
+// 게시글 목록 페이지 반응형
+@media screen and (max-width:1200px){
+    .cont2list   { width: 100%; margin: 0 auto;
+        .brd_center3{ width: 80%; margin: 0 auto;
+            
+            .aven {width: 100%; display: flex; flex-wrap: wrap;
+                .line {  width: 31%; margin: 0 1%; position: relative; border: 1px solid #adb5bd; box-sizing: border-box; margin-bottom: 30px;
+                   
+                   
+                    .wrwd6 {width:100%;  
+                        .wrwd3 { margin-left: 15px;}
+                        .wrwd4 { margin-right: 15px;}
+                    }   
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    .listcontainer {
+        .cont2list   { width: 100%;
+            .brd_center3{ width:90%;
+                .grid {margin:100px 0 30px 0    ; display: flex; justify-content: space-between; align-items: center;  border: 1px solid #adb5bd; height: 60px;
+                    .brands { width: 40%;
+                        
+                    }
+                    #myFoty { width: 100%; text-align: end;
+                       
+                        .box5 { padding-left: 10px; width: 50%; height: 38px;border-radius: 4px; border: 1px solid #adb5bd;}
+                        #searchBtn {  width: 50px;  height: 38px;border-radius: 4px; background-color:#adb5bd ; border: none;}
+                        
+                    } 
+                }
+                .aven {width: 100%; display: flex; 
+                    .line {  width: 48%; margin: 12px 1%;      
+                        
+                    }
+                } 
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    .listcontainer {
+        .cont2list   { width: 100%;
+            .brd_center3{ width:95%;
+                .grid {margin:100px 0 30px 0    ; display: flex; justify-content: space-between; align-items: center;  border: 1px solid #adb5bd; height: 60px;
+                    .brands { width: 37%; 
+                        h2 { font-size: 12px;}
+                        
+                    }
+                    #myFoty { width: 70%; text-align: end;
+                        .box5 {width: 40%;}
+                       
+                        
+                        
+                        
+                    } 
+                }
+                .aven {width: 100%; 
+                    .line {  width: 98%;; margin: 30px 1%; 
+                        .ones { width: 25px ; height: 25px; display: flex; justify-content: center; align-items: center; }
+                        .wrwd { width: 100%; height: 350px;
+                            img { width: 100%; height: 100%;}
+                        
+                            
+                        }
+                        
+                        .wrwd6 {width: 100%; }
+                        
+                    }
+                } 
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+     // 로그인 페이지
+
+#login_container {  display: flex; justify-content: center;  margin-top: 200px;
+    .center { margin: 0 auto; width: 960px; display: flex; justify-content: center;align-items: center;
+        #login_form { width: 50%; text-align: center;
+            .logi { text-align: center; margin-bottom: 50px;
+                h2 {
+
+                }
+            }
+            .btn { width: 183px; margin: 30px auto; display: flex; 
+                border: 2px solid #f4f4f4;  border-radius: 20px;
+                .btns { color: #000; border: none; line-height: 30px; width: 50%; background-color: #fff;
+                    
+                }
+                .qwe { border-right: 1px solid #f4f4f4;}
+               
+            }
+            .line {
+                .text {padding-left: 23px; width:80%; height: 54px; border-radius: 20px; border: none; border: 2px solid #f4f4f4;}
+                .pass{ margin: 22px 0 22px 0;}
+            }
+            .btnok {  text-align: start; margin-left: 34px;
+                .qwe { width: 144px; height: 54px; border: 1px solid #acacac; color: #000; background-color: #fff; border-radius: 20px;margin-bottom: 34px;
+                    &:hover {color: #fff; background-color: #000;}
+                }
+                .canc { width: 144px; height: 54px; border: 1px solid #acacac; color: #000; background-color: #fff;  border-radius: 20px;margin-bottom: 34px;
+                    &:hover {color: #fff; background-color: #000;}
+                }
+                h2{ 
+                    a {color: #000;
+                    &:hover { color:gray;}
+                    }
+                }
+                
+            
+            
+            }
+
+            .dont {}
+        }
+        .im22 { width: 50%; position: relative;
+            img { width: 100%;}
+            .bg { position: absolute;left:0;top:0; transition:all 0.5s; width:100%; height:100%; background-color: #000; opacity:0;  z-index: 3;display: flex; justify-content: center; align-items: center;
+                .text {  background-color: #000; opacity: 0.8; width: 270px; height: 216px; border: 2px solid #5f5344;  text-align: center; display: flex; align-items: center; justify-content: center;
+                    h2 { color:#fff;
+                    &:hover{color: yellow;}}
+                }
+                
+            }
+            &:hover .bg {opacity:0.6;z-index: 55;}
+        }
+    }
+}
+
+// 회원가입 페이지
+
+#join_container { display: flex; justify-content: center;  margin-top: 200px;
+    .center { width: 960px; display: flex; justify-content: center;align-items: center;
+        #join_form { width: 50%; text-align: center;
+            .logi { text-align: center; margin-bottom: 50px;
+                h2 {
+
+                }
+            }
+            .btn { width: 183px; margin: 30px auto; display: flex; 
+                border: 2px solid #f4f4f4;  border-radius: 20px;
+                .btns {  border: none; line-height: 30px; width: 50%; background-color: #fff; color: #000;
+                    
+                }
+                .qwe { border-right: 1px solid #f4f4f4;}
+               
+            }
+            .line { position: relative;
+                .text {margin-bottom: 65px; padding-left: 23px; width: 80%; height: 54px; border-radius: 20px; border: none; border: 2px solid #f4f4f4;}
+                .name {}
+                .email {}
+                .pass{ }
+               
+                .message { position: absolute;left: 45px; bottom: 30px;}
+            }
+            .line.ok .text, .line.ok .chk2{border:1px solid #00c850;}
+            .line.no .text, .line.no .chk2{border:1px solid red;}    
+            
+            .btnok {  text-align: start; margin-left: 34px;
+                .qwe { width: 144px; height: 54px; border: 1px solid #acacac; color: #000; background-color: #fff; border-radius: 20px;margin-bottom: 34px;
+                    &:hover { color: #fff; background-color: #000;}
+                }
+                .canc { width: 144px; height: 54px; border: 1px solid #acacac; color: #000; background-color: #fff; border-radius: 20px;margin-bottom: 34px;
+                    &:hover { color: #fff; background-color: #000;}
+                }
+            }
+            .dont {
+                .blise { color: #000;}
+            }
+        }
+        .im22 { width: 50%; position: relative;
+            img { width: 100%;}
+            .bg { position: absolute;left:0;top:0; transition:all 0.5s; width:100%; height:100%; background-color: #000; opacity:0;  z-index: 3;display: flex; justify-content: center; align-items: center;
+                .text {  background-color: #000; opacity: 0.8; width: 270px; height: 216px; border: 2px solid #5f5344;  text-align: center; display: flex; align-items: center; justify-content: center;
+                    h2 { color:#fff;}
+                    &:hover{color: yellow;}
+                }
+                
+            }
+            &:hover .bg {opacity:0.6;z-index: 55;}
+        }
+    }
+}
+// 관리자 상품 등록페이지
+
+.prdstore { margin: 300px auto; 
+    .adminmenu{ display: flex; justify-content: center;
+        .admin_menu1 { display: flex; margin-bottom: 50px;
+            li{ line-height: 100px; margin: 0 50px;
+                .rdfsf{ font-size: 30px; color: #000; opacity: 0.3; }
+                .rdfsfdds { color:#000; opacity: 1; font-size: 30px; font-weight: bold;}
+            }
+        }
+    }
+    .prdwrap {  width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap;
+        .list { width: 31%; margin: 10px 1%; background-color: #f7f6f3;
+            p { margin: 10px 0;}
+
+        }
+        .imgse { width: 100%; height: 250px;
+            img{ width: 100%; height: 100%;}
+
+        }
+    }
+    #addprdlist {width: 1100px; margin: 200px auto; display: flex; flex-wrap: wrap;
+        .fds {  display: flex; justify-content: space-between; width: 100%;
+        .box4 {margin-top: 2px; height: 35px;padding-left: 10px; width:28%; border-radius: 4px; border: 1px solid #adb5bd;}
+        .box5 { margin: 0 2%; height: 35px; padding-left: 10px; width:28%;border-radius: 4px; border: 1px solid #adb5bd;}
+        .box6 { margin-top: 0px; padding-top: 5px; height: 30px; padding-left: 10px; width: 28%;border-radius: 4px; border: 1px solid #adb5bd;}
+        }
+        
+        .textarea { width: 90%;height: 250px; margin: 30px auto;
+            .texas { width:100%;  height: 100%; padding: 10px 0 0 10px;}
+        }  
+        .box { margin: 1% 1%;}  
+        .storebuttn { width: 30%; margin: 0 auto;  height: 34px;border-radius: 4px; background-color:#adb5bd ; border: none;background-color: #fff; color:#000; border: 1px solid #000;
+            &:hover { background-color: #000; color: #fff;}
+        
+        
+        }
+    }
+}
+// 게시글 작성 페이지
+#container {
+    .cont1 { position: relative;
+        .text {position: absolute; left:50%;top:50%;
+            transform:translate(-50%,-50%); text-align: center;
+            h2 { margin-bottom: 11px; color: #fff; font-size: 45px;}
+            p { color: #fff;}
+        }
+    }
+    .cont2 { text-align: center;
+        .cont { margin: 106px 0;
+            h2 {font-size: 40px;}
+            p { margin: 30px 0 50px 0;}
+        }
+        .center { width: 1020px; display: flex; justify-content: space-between; margin: 0 auto;
+            .box {
+                .add {
+                    i { font-size: 40px;}
+                    h2 { margin: 26px 0 16px 0;}
+                }
+            }
+        }
+        .brd_center2{ display: flex; justify-content: center; margin-top: 50px;
+            #brd_form {  width: 730px;
+                .name { display: flex;
+                    .put { padding-left: 20px; width: 44%; border: none; border: 2px solid #f4f4f4; height: 43px; margin: 0 10px;
+
+                    }
+                }
+                .teq { margin: 20px 0;}
+                .area {width: 94%; border: none; border: 2px solid #f4f4f4; height: 240px; padding: 20px 0 0 20px;}
+                .filebox { width: 100%; height: 50px; display: flex; justify-content: center; 
+                    .file {margin-top: 20px; border:none; width: 94%; height: 43px; border: 2px solid #f4f4f4; padding: 10px 0 0 20px;}
+                }
+                .btnss {
+                    .btn { width: 144px; height: 54px; border: 1px solid #acacac; color: #274abb; background-color: #fff; border-radius: 20px; margin: 50px 10px;
+                    }
+                    .qws { 
+                        &:hover { color: #fff; background-color: #274abb;}
+                    }
+                    .qwq { 
+                        &:hover { color: #fff; background-color: #274abb;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 게시글 목록페이지
+
+.cont2list   { display: flex; justify-content: center;
+    .brd_center3{ width: 70%; margin: 0 auto;
+        .grid {margin:100px 0 30px 0    ; display: flex; justify-content: space-between; align-items: center;  border: 1px solid #adb5bd; height: 60px;
+            .brands {  display: flex; align-items: center;
+                i { color: #fff; width: 60px; height: 60px; background-color:  #000; display: flex; justify-content: center; align-items: center; font-size: 40px; margin-right: 22px;
+                   
+                }
+            }
+            #myFoty { margin-right: 30px;
+                .box4 { width: 85px; height: 38px;border-radius: 4px;border: 1px solid #adb5bd;
+                    
+                }
+                .box5 { padding-left: 10px; width: 240px; height: 38px;border-radius: 4px; border: 1px solid #adb5bd;}
+                #searchBtn {  width: 50px;  height: 38px;border-radius: 4px; background-color:#adb5bd ; border: none;}
+                
+            } 
+        }
+        .aven {width: 100%; display: flex; flex-wrap: wrap;
+            .line { width: 31.333333%; margin: 0 1%; position: relative; border: 1px solid #adb5bd; box-sizing: border-box; margin-bottom: 30px;
+                .ones { color: #000; width: 25px ; height: 25px; display: flex; justify-content: center; align-items: center; }
+                .wrwd { width: 100%; height: 233px;
+                    img { width: 100%; height: 100%;}
+                
+                    .wrtext { position: absolute; left:18px; top:44px ; display: flex; text-align: center; align-items: center; 
+                        p{color: #fff; font-size: 10px; width: 70px; line-height: 30px; margin: 0 5px; border-radius: 10px; 
+                            &:nth-child(1) { background-color: #274abb;}
+                            &:nth-child(2) { background-color: #ff0000;}
+                        }
+                    }
+                }
+                .wrwd6 { 
+                    .wrwd3 { line-height: 50px; color: #acacac;}
+                    .wrwd4 { line-height: 50px; color: #acacac;}
+                }
+                 .wrwd7 { padding-left: 20px; border-bottom: 1px solid #adb5bd; 
+                    .wrwd5 { margin-top: 24px; color: #000;
+                        .tiwd { color: #000; font-weight: bold;}
+                    }
+                    .wrwd2 { margin: 20px 0; color: #acacac;}
+                }
+                .wrwd6 {width: 310px;  display: flex; justify-content: space-between; margin: 0 auto; }
+                
+            }
+        }
+        .insert { margin: 50px 0; width: 100%; display: flex; justify-content: end; align-items: center;
+            a { display: block; display: flex; justify-content: center; align-items: center; width: 100px; height: 50px; color:  #000 ; background-color: #fff; border: 1px solid #adb5bd;}    
+            .list2 { margin-left: 20px;
+                &:hover { color: #fff; background-color: #000;}
+            }
+            .inmsrt {
+                &:hover { color: #fff; background-color:  #000;}
+            }
+        }
+    }
+}
+// 게시글 수정페이지
+#container{
+    .cont5 {
+        .brd_center2 {
+            #brd_update { width: 100%;
+                .name {  display: flex; width: 60%; justify-content: center; margin: 0 auto;
+                    .put { padding-left: 20px; width: 44%; border: none; border: 2px solid #f4f4f4; height: 43px; margin: 0 10px;
+    
+                    }
+                }
+                .teq { margin: 20px auto; display: flex; justify-content: center;}
+                .area { display: flex; justify-content: center; margin: 0 auto; width: 60%; border: none; border: 2px solid #f4f4f4; height: 240px; padding: 20px 0 0 20px;}
+                .filebox { width: 60%; height: 50px; display: flex; justify-content: center; margin: 0 auto;
+                    .file {margin-top: 20px; border:none; width: 94%; height: 43px; border: 2px solid #f4f4f4; padding: 10px 0 0 20px;}
+                }
+                .btnss { text-align: center;
+                    .btn {  border: none;width: 144px; height: 54px; border: none; color: #000; background-color: #fff;border: 1px solid #acacac;  border-radius: 20px; margin: 50px 10px;
+                        &:hover { color: #fff; background-color: #000;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 게시글 상세페이지
+
+#container2 {
+    .cont1-re { position: relative;
+        .textblog{   width: 100%; background-image: url(/img/fo49.jpg);
+            height: 220px;
+        }
+        .text {position: absolute; left:50%;top:50%;
+            transform:translate(-50%,-50%); text-align: center;
+            h2 { margin-bottom: 11px; color: #fff; font-size: 45px;}
+            p { color: #fff;}
+        }
+    }
+    .brd_centerload {  width: 1100px; margin: 100px auto; 
+        .upload { width: 100%; height: 615px;
+            img { width: 100%; height: 100%;}
+        }
+        .filebox {width: 18%;height: 44px; border: 1px solid #adb5bd; display: flex; align-items: center;padding-left: 10px;}
+        .qwer12 {margin: 45px 0;  margin-right: 20px;
+            .area { line-height: 35px;}
+            #title { font-weight: bold; font-size: 40px; }
+        }
+        .sub22 { display: flex; 
+            i { margin-right: 5px; }
+            .qwer122 { display: flex; margin-right: 20px; }
+        }
+        
+    }
+    .brqe { margin: 50px auto; width: 1100px; display: flex; justify-content: flex-start; align-items: center;
+        .brd { margin: 0 5px; color: #000; width: 80px; height: 44px; background-color: #fff; border: 1px solid #acacac;
+               display: block;display: flex; justify-content: center  ; align-items: center; }
+        .dqe { 
+            &:hover { background-color: #000; color: #fff;}
+        }
+        .dde { 
+            &:hover { background-color: #000; color: #fff;}
+        }
+        .dte { 
+            &:hover { background-color: #000; color: #fff;}
+        }
+
+    }
+    .comment {  width: 1100px;  margin:  60px auto;
+        textarea { padding:10px 0 0 10px ; height:80px; resize: none; margin-top: 35px; width: 50%;}   
+
+        .sigs {     margin-top: 34px;
+            .btn { width: 170px; height: 44px; border: 1px solid #acacac; background-color: #fff; color: #000;;
+                &:hover { background-color: #000;; color: #fff;  }
+            }
+        }
+    }
+    .connetw{  
+        .commentss {width: 1100px;  margin: 0 auto  ;
+            h2 { margin-bottom: 28px;}
+        }
+        .comment_box {   width: 1100px; margin:  60px auto;
+            .comupdate_form { display: none;}
+            .comment_context { line-height: 20px;white-space:pre; }
+            .comment_date { margin: 10px 0;}
+            .comment_btn { margin-top: 10px;}
+        
+            .comupdate_form {
+                .virs { display: flex; align-items: center;   
+                    .comContext {  margin-top: 15px; height: 50px; margin-right: 20px;width: 50%;}
+                    .comment_ok { width: 80px; height: 40px ; margin-right: 5px; 
+                        &:hover { color: #fff; background-color: #000;}
+                    }
+                    .comment_no { width: 80px; height: 40px;
+                        &:hover { color: #fff; background-color: #000;}
+                    }
+                    button {border: 1px solid #acacac ; color: #000; background-color: #fff;
+                    
+                    }
+                }
+       
+            }     
+        }  
+    }
+}
+
+
+
+// 관리자 매장등록 페이지
+
+.prdstore2 { margin: 300px auto; 
+    .adminmenu2 { display: flex; justify-content: center;
+        .admin_menu2 { display: flex; margin-bottom: 50px;
+            li{ line-height: 100px; margin: 0 50px;
+                .rdfsf{font-size: 30px; color: #000; opacity: 0.3; }
+                .dsfd {color: #000;  opacity: 1; font-weight: bold;}
+            }
+        }
+    }
+    .storewrap { width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap;
+        .list { width: 31%; margin: 20px 1%; 
+            .line{ display: flex; margin: 10px 0;}
+        }
+    }
+    .storein { width: 1100px;  margin: 50px auto;
+        h2 {}
+    }
+    .addstror { width: 1100px;  margin: 0 auto;
+        .city1 { border: none; height: 34px; border-radius: 5px; border: 1px solid #adb5bd; }
+        .city2 { border: none; height: 34px; border-radius: 5px; border: 1px solid #adb5bd; }
+        .box11 { border: none;height: 32px; border-radius: 5px; border: 1px solid #adb5bd;} 
+        .box6 { width: 100px; border: none; height: 34px; border-radius: 5px; border: 1px solid #adb5bd; background-color: #fff; color: #000;
+        &:hover { background-color: #000; color: #fff;}
+        }
+        .box7 { margin-top: 10px; border: none; height: 32px; border-radius: 5px; border: 1px solid #adb5bd; }
+        .box12 { width: 100px; border: none; height: 34px; border-radius: 5px; border: 1px solid #adb5bd;background-color: #fff; color: #000;
+            &:hover { background-color:  #000; color: #fff;}
+        }
+    }
+}   
+
+// 관리자 글 작성 페이지
+
+.insertcontainer { margin: 300px auto; 
+    .adminmenu { display: flex; justify-content: center;
+        .admin_menu { display: flex; margin-bottom: 50px;
+            li { line-height: 100px; margin: 0 50px;
+                .rdfsf {font-size: 30px; color: #000; opacity: 0.3;
+                    
+                }
+                .rdfsfds { color: #000; opacity: 1; font-weight: bold;}
+                
+            
+            }
+        }
+    } 
+    .aven {  width: 1100px; margin: 0 auto;  display: flex; flex-wrap: wrap;
+        .line { width: 31%; margin: 20px 1%;  border: 1px solid #acacac;
+            .wrwd { width: 100%; height: 150px;
+                img {width: 100%; height: 100%; }
+            }
+            .wrwd3 { }
+            .wrwd4 { }
+        }
+    }
+    .insert_center2 { width: 1100px; margin: 100px auto;
+        .name {
+            .put { width: 50%; height: 40px; margin: 10px 0; padding-left:  15px;
+
+            }
+            
+        }
+        .area { width: 100%; height: 250px; resize: none; padding: 15px 0 0 15px;
+            .filebox { margin-top: 20px;
+                .file { border: none; width: 150px; height: 50px;}
+            }
+            .btnss {
+                .btn { border: none; width: 150px; height: 50px; background-color: #fff; }
+                .qws { color: #000; border: 1px solid #adb5bd; 
+                    &:hover { background-color: #000; color: #fff;}
+                }
+                .qwq { color: b#000; border: 1px solid #adb5bd; 
+                    &:hover { background-color: #000; color: #fff;}
+                }
+            }
+        }
+    }
+}
+// 문의게시판
+.inqurecont1 {  position: relative;
+    .imafe { height: 300px;
+        img{ width: 100%; height: 100%;}
+    }
+    .text { position: absolute; left:50%;top:50%;
+        transform:translate(-50%,-50%); text-align: center;
+        h2 { font-size: 40px;
+
+        }
+        p { }
+    }
+}
+// 이벤트 매장
+
+.cont4 {   width: 730px; margin: 50px auto;
+    .trbox {margin-top: 100px ;
+        .trgnb {display: flex; justify-content: center;  border: 1px solid #000; text-align: center;
+            li { width:50%; line-height: 50px; 
+                a { color: #000; display: block; height: 100%; }
+                &:nth-child(2) { border-left: 1px solid #000;  }
+                
+                .fsdf { background-color: #fff; 
+                    a{ color: #000;}
+                }   
+                .fsdf2  {background-color: #adb5bd; 
+                    a{ color: #fff;}
+                }  
+            }
+        }
+    }
+}
+.cont2 { 
+    .cont {   width: 730px; margin: 50px auto;
+        .trbox {margin-top: 100px ;
+            .trgnb {display: flex; justify-content: center;  border: 1px solid #000; text-align: center;
+                li { width:50%; line-height: 50px; 
+                    a { color: #000; display: block; height: 100%; }
+                    &:nth-child(2) { border-left: 1px solid #000;  }
+                    
+                    .fsdf { background-color: #adb5bd; 
+                        a{ color: #fff;}
+                    }   
+                    .fsdf2  { }  
+                }
+            }
+        }
+    }
+}
+
+.brd_center2{ display: flex; justify-content: center; margin-top: 50px;
+    #brd_form {  width: 730px;
+        .name { display: flex;
+            .put { padding-left: 20px; width: 44%; border: none; border: 2px solid #f4f4f4; height: 43px; margin: 0 10px;
+
+            }
+            .textd { width: 47%; height: 40px; margin: 10px 10px; padding-left:  15px;border: none; border: 2px solid #f4f4f4; }
+        }
+        .teq {margin: 20px 0 20px 0; }
+        .area {width: 96%; border: none; border: 2px solid #f4f4f4; height: 240px; padding: 20px 0 0 20px;}
+        .filebox { width: 100%; height: 50px; display: flex; justify-content: center; 
+            .file {margin-top: 20px; border:none; width: 94%; height: 43px; border: 2px solid #f4f4f4; padding: 10px 0 0 20px;}
+        }
+        .btnss {
+            .btn { width: 144px; height: 54px; border: 1px solid #acacac; color: #000; background-color: #fff; border-radius: 20px; margin: 50px 10px;
+            }
+            .qws { 
+                &:hover { color: #fff; background-color: #000;}
+            }
+            .qwq { 
+                &:hover { color: #fff; background-color: #000;}
+            }
+        }
+    }
+}
+// 이미지
+.image {
+    .imagebox { width: 100%; height: 300px;
+        img { width: 100%; height: 100%;}
+    }
+}
+
+// 메인페이지
+
+#header { width:100%; position: relative; z-index: 99; 
+    
+    
+    .samsung {  
+        .center2 { margin: 0 auto;  width: 1280px; background-color: #fff; border-radius: 30px; position: relative; 
+
+            box-shadow: 0px 3px 10px rgba(0,0,0,0.4) ; transition: all 1s; z-index: 10;
+            display: flex; justify-content: center; align-items: center;
+                 
+            .logo { display: flex; align-items: center; text-align: center;
+                h2 { 
+                    a{color: #000;}
+                    
+            }
+            }
+            .gnbb { display: flex; justify-content: center; text-align: center;
+                
+                > li { margin: 0 18px; line-height: 80px; width: 100px;
+                    
+                    
+                    
+                    a { text-align: center; color: #000;  font-weight: bold; font-size: 18px; position: relative;
+                        &::after{content:""; display:block; height:2px;
+                            background:#000; position:absolute;left:50%;
+                            transform:translateX(-50%);top:25px;
+                            width:0%;transition:all 0.5s;  }  
+                    }
+                    
+                &:hover a::after { width: 100%;}    
+                }  
+            }
+            .logia { background-color: #fff; display: flex; justify-content: center;
+                .center { 
+                    .login { display: flex; justify-content: flex-end;
+                        .condition { display: flex; align-items: center;
+                            .loj { line-height: 60px; color: #000; margin-right: 40px; }
+                            .arr { color:#000; }
+                            .loginuser { }
+                            .logina {}
+                            .name { 
+                                a {color: #000;}
+                            }
+                            .loginb { 
+                                
+                            }
+                            .dsf {
+                                color: #000;
+                                &::after { content: ""; margin: 0 10px;
+                                    display: inline-block; width: 1px; height: 12px; background-color: #000;}
+                            }
+                        }
+                    }
+                } 
+            }
+            .btn { display: none; position: absolute; right:30px;top:50%; transform: translateY(-50%);
+                .line{ margin: 6px; display: block; width: 40px; height: 2px; background-color: #000;transition: all 0.5s;}
+    
+            }
+            .btn.chg .top {position: absolute; left:0 ;top:0;transform:rotate(45deg);}
+            .btn.chg .mid {transform: translateX(10px);opacity: 0;}
+            .btn.chg .bot {position: absolute; left:0 ;bottom:0;transform:rotate(-45deg);}
+        }
+        .sideM{  width: 280px; height: 100vh; position: fixed;right: -280px;top: 0; background-color: #dc3545;transition: all 0.5s;
+            
+            
+            .linebtn{ position: relative; display: flex; ; flex-direction: column; 
+                .btn2{ display: block ; position: absolute; right: 10px; top:12%; transform: translateY(-50%);
+                    .line { display: block; width: 35px; height: 2px; background-color: #fff;transition: all 0.5s;}
+                    .top2 {position: absolute; left:0 ;top:5px;transform:rotate(45deg);}
+                    .mid2 {transform: translateX(10px);opacity: 0;margin: 5px 0;}
+                    .bot2 {position: absolute; left:0 ;bottom:5px;transform:rotate(-45deg);}
+                }
+            } 
+            .two { margin-top: 125px;
+                li{ margin:30px 0 0 83px;
+                    span{position: relative; top: 25px; left:-27px;
+                    }
+                    a{display: block; color: #fff;}
+                }
+            }
+            .three { 
+                .face{ display: flex;
+                    li{margin-left: 34px;
+                        i {color: #fff;}
+                    }
+                }
+                p{margin:0 0 104px 34px; line-height: 34px; color: #fff; font-size: 13px;}
+            }
+        }
+        .sideM.move { right: 0;}      
+    }
+}
+#header.fixer{position: fixed; top:0; bottom: unset; display: block;
+    .center2 { width: 100%; border-radius: 0;}
+}
+.container {  background-color: #f4f4f4;
+    .cont1 { 
+        .slideWrap{width: 1400px;height: 700px;
+            .swiper-wrapper {
+                .swiper-slide{ background: no-repeat; background-size: cover; background-position: center;}
+                .swiper-slide.s1{background-image: url(../img/app1.jpg);}
+                .swiper-slide.s2{background-image: url(../img/bb7.jpg);}
+                .swiper-slide.s3{background-image: url(../img/iph21.png);}
+                .swiper-slide.s4{background-image: url(../img/app2.jpg);}
+               
+            }
+        }
+        .swiper{
+            .circleBtn{position: absolute;  bottom: 22px; z-index: 99  ; 
+                display: flex; justify-content: center;
+                .swiper-pagination-bullet{margin: 0 10px; width: 20px; height: 20px;  background-color:transparent;border:3px solid orange; opacity: 0.5;}
+                .swiper-pagination-bullet-active { background-color: #fff; border:3px solid red; opacity: 1;}
+            }
+            
+            .prevBtn{position: absolute; background-image: url(../img/leftBtn.png); width: 100px; height: 100px; background-repeat: no-repeat;
+                left:50px; top:50%; transform: translateY(-50%);  z-index: 99;}
+            .nextBtn{position: absolute; background-image: url(../img/rightBtn.png); width: 100px; height: 100px; background-repeat:no-repeat;
+                right:50px; top:50%; transform: translateY(-50%); z-index: 99;}     
+        }
+    }
+    .cont2 { padding: 200px 0;  
+        .center {  width: 90%; margin: 0 auto; 
+            .tvpro{margin: 30px 0; text-align: center;
+                h2 { font-size: 40px;}
+            }
+            .image1{ margin: 50px auto;width: 450px; height: 630px; background-image:url(../img/wa1.png);
+                background-size: cover; background-repeat: no-repeat; 
+            }
+            .silder {position: relative;margin: 0 auto;width: 80%; height: 407px; display: flex; justify-content: center;
+                
+                .view{width: 100%; height: 100%; 
+                    > div{ width: 100%; height: 100%; position: absolute; 
+                        opacity: 0; transition: all 0.5s; z-index: 2;
+                    &:nth-child(1) { opacity: 1; z-index: 3;}
+                    }
+                    .pto3{display: flex; justify-content: center;
+                         div {border: 1px solid #000;box-sizing: border-box;  width: 25%;
+                            a {
+                                img{width: 100%; height: 405px;}   
+                            }  
+                        }
+                    }
+                }
+                .btns2{ 
+                    div{position: absolute; top:50%; transform: translateY(-50%);z-index: 5;}
+                    .prevBtn2{  left:-50px; font-size: 30px; 
+                        i { color: #000;}
+                    }
+                    .nextBtn2{ right: -50px; font-size: 30px; 
+                        i { color: #000;}
+                    }    
+                }
+                .circleBtn2{ position: absolute; left:50%; bottom: -80px; transform: translateX(-50%);
+                    z-index: 4;display: flex;
+                    li{ 
+                        a { display: block; width: 20px; background-color: #000; border-radius: 50%;
+                            height: 20px; margin: 0 10px;transition: all 0.5s;}
+                    }
+                    li.on a{background-color: #dc3545;width: 50px; border-radius: 20px; }
+                 }
+            }
+
+        }
+        .cont2center { width: 90%; margin: 200px auto;
+            .tvpro{margin: 30px 0; text-align: center;
+                h2 { font-size: 40px;}
+            }
+            .image12{ margin: 50px auto;width: 550px; height: 630px; background-image:url(../img/pp1.jpg);
+                background-size: cover; background-repeat: no-repeat; 
+            }
+            .silder2 {position: relative;margin: 0 auto;width: 80%; height: 407px; display: flex; justify-content: center;
+                    
+                .view2{width: 100%; height: 100%;
+                    > div{ width: 100%; height: 100%; position: absolute; 
+                        opacity: 0; transition: all 0.5s; z-index: 2;
+                    &:nth-child(1) { opacity: 1; z-index: 3;}
+                    }
+                    .pto4{display: flex;  justify-content: center;
+                         div {border: 1px solid #000;box-sizing: border-box; width: 25%;
+                            a {
+                                img{width: 100%; height: 405px;}   
+                            } 
+                        }
+                    }
+                }
+                .btns22{ 
+                    div{position: absolute; top:50%; transform: translateY(-50%);z-index: 5;}
+                    .prevBtn22{  left:-100px; font-size: 30px;}
+                    .nextBtn22{ right: -100px; font-size: 30px;}    
+                }
+                .circleBtn22{ position: absolute; left:50%; bottom: -80px; transform: translateX(-50%);
+                    z-index: 4;display: flex;
+                    li{ 
+                        a { display: block; width: 20px; background-color: #000; border-radius: 50%;
+                            height: 20px; margin: 0 10px;transition: all 0.5s;}
+                    }
+                    li.on a{background-color: #dc3545;width: 50px; border-radius: 20px; }
+                 }
+            }
+        }
+    }
+    .cont3 { 
+        .center5{ display: flex; justify-content: center; 
+            .portfolio { width: 80%;
+                .bts { display: flex; justify-content: center; margin-bottom: 40px;
+                    li {
+                        &::after{ content:"";display: inline-block; position: relative; top:1px; width: 2px; height: 15px; 
+                            background-color: #eb8102; margin: 0 31px;} 
+                        
+                        a { color: #000;}    
+                         
+                        &:last-child::after {
+                            display:none;}
+                    }
+                   
+                    li.on a {color: red; font-weight: bold;}
+                }
+                .box12 { display: flex; flex-wrap: wrap;
+                    
+                    .all {width: 31.333333%; margin: 1%; position: relative;
+                        
+                        img {width: 100%; height: 100%;}
+                        
+                        .bg{ display: flex; flex-direction: column; align-items: center; justify-content: center;  position:absolute; left:50%;top:50%; transform: translate(-50%,-50%); transition:all 0.5s; width:100%; height:100%;
+                            background:rgba(0,0,0,0); opacity:0; text-align: center;
+                            h2{color: #fff; line-height: 35px; font-size: 18px;
+                                &:hover{color: yellow;}
+                            }
+                            .appds {}
+                            .tessd { display: flex; justify-content: center;
+                                .textde { text-decoration:line-through}
+                                p { margin: 0 10px;}
+                                .sdsa { margin-bottom: 20px;}
+                                
+                            } 
+                            .clasds { margin-top: 170px;}
+                            .clasdss { margin-top: 0px;} 
+                            .gsdd { margin-top: 150px;}
+                            
+                            p{color: #fff; font-weight: bold; margin: 18px 0 28px 0;}
+                            a{display: block; color: #fff; width: 150px;  height:38px; 
+                                background-color: transparent; margin: 0 auto;
+                                border:2px solid #fff ; box-sizing: border-box; line-height: 2;
+                            }
+                        }
+                        &:hover .bg {background:rgba(0,0,0,0.6);opacity:1;z-index: 55;     
+                        }
+                        .bg2{ width:100%; padding:27px 0; position: absolute; background-color:rgba(0,0,0,0.7); color: #fff; 
+                              opacity: 0.6;left:0; bottom:0px; transition:all 0.5s; 
+                            p {margin-left: 15px; line-height: 26px; height: 42px;
+                                display: flex; align-items: center;
+                            }
+                        }
+                            
+                        &:hover .bg2{bottom: -96px; }
+
+                        
+                    }
+                    .small {height: 300px;}
+                    .big { height: 520px;
+                       
+                    }
+                    .wide { width: 64.666666%; height: 520px;
+                        
+                    }
+                    
+
+                }
+            }
+        } 
+
+    }
+    .cont4 { 
+        
+    }
+    .cont6 {  padding: 300px 0;
+        .contcenter6 { width: 80%; margin: 0 auto;
+            .menus { width: 100%; display: flex; flex-wrap: wrap; justify-content: center;
+                .rightnews {  width: 40%; margin: 3% 2%;  display: none;
+                    .tsdf { 
+                        .tewd {
+                            .qwer12 {
+                                .sub2 {
+                                    
+                                }
+                                #title { color: #000; margin: 15px 0; font-weight: bold;}
+                            }
+                            .sub22 {
+                                .qwer122 { width: 100%;
+                                    img { width: 100%; height: 100%; border-radius: 20px;}
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(1),    
+                    &:nth-child(2),    
+                    &:nth-child(3),    
+                    &:nth-child(4){ display: block;}  
+                }
+                
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:1200px){ 
+    #header { 
+    
+    
+        .samsung {  
+            .center2 {   width: 100%;  border-radius: 0px; 
+     
+            }           
+        }
+    }
+    
+    
+    .container {  background-color: #f4f4f4;
+        .cont1 { 
+            .slideWrap{width: 100%;
+                
+            }
+            
+        }
+        .cont2 { 
+            .center {  width: 90%; margin: 0 auto; 
+                
+                .image1{ 
+                }
+                .silder {width: 90%; height: 407px; 
+                    
+                    .view{
+                        
+                        .pto3{
+                             div { width: 25%;
+                                a {
+                                    img{width: 100%; height: 405px;}   
+                                } 
+                                  
+                            }
+                        }
+                    }
+                    .btns2{ 
+                        div{}
+                        .prevBtn2{  left:-50px; font-size: 30px;}
+                        .nextBtn2{ right: -50px; font-size: 30px;}    
+                    }
+                    
+                }
+    
+            }
+            .cont2center { width: 90%; 
+                
+                
+                .silder2 {width: 90%; 
+                        
+                    .view2{
+                        
+                        .pto4{
+                             div { width: 25%;
+                                 a {
+                                    img{width: 100%; height: 405px;}
+                                 } 
+                                 
+                            }
+                        }
+                    }
+                    .btns22{ 
+                        div{}
+                        .prevBtn22{  left:-50px; font-size: 30px;}
+                        .nextBtn22{ right: -50px; font-size: 30px;}    
+                    }
+                    
+                }
+            }
+        }
+        .cont3 { 
+            
+        }
+        .cont4 { 
+            
+        }
+        .cont6 {  
+            
+        }
+    }
+    .footer { 
+        .foo {  display: flex; width: 90%; margin: 0 auto; justify-content: space-between; margin: 0 auto;
+            
+        }
+        .foobot { width: 90%; margin: 0 auto; display: flex; justify-content: center;
+            .menu2 { 
+               
+            }
+        }
+        .footend { width: 90%; margin: 0 auto; border-top :1px solid #fff;  
+        }  
+    }    
+}
+@media screen and (max-width:1024px){
+    #header { 
+    
+    
+        .samsung {   width: 100%;
+            .center2 { width: 100%; display: flex; justify-content: space-between;
+    
+                
+                     
+                .logo { margin-left: 50px; line-height: 35px;
+                    h2 { 
+                        a{}
+                        
+                }
+                }
+                .gnbb { display: none; 
+                    
+                    > li { 
+                        
+                        
+                        
+                        a {   }
+                    }  
+                }
+                .logia { margin-right: 100px;
+                    
+                }
+                .spanBtn { display: block; position: absolute; right:30px;top:50%; transform: translateY(-50%);
+                    .line{ margin: 6px; display: block; width: 40px; height: 2px; background-color:#000; transition: all 0.5s;}
+        
+                }
+                .btn.chg .top {position: absolute; left:0 ;top:0;transform:rotate(45deg);}
+                .btn.chg .mid {transform: translateX(10px);opacity: 0;}
+                .btn.chg .bot {position: absolute; left:0 ;bottom:0;transform:rotate(-45deg);}
+            }
+            .sideM{ z-index: 50; width: 280px; height: 100vh; position: fixed;right: -280px;top: 0; background-color: #000;transition: all 0.5s;
+                
+                
+                .linebtn{ position: relative; display: flex; ; flex-direction: column; 
+                    .btn2{ display: block ; position: absolute; right: 10px; top:12%; transform: translateY(-50%);
+                        .line { display: block; width: 35px; height: 2px; background-color: #fff;transition: all 0.5s;}
+                        .top2 {position: absolute; left:0 ;top:5px;transform:rotate(45deg);}
+                        .mid2 {transform: translateX(10px);opacity: 0;margin: 5px 0;}
+                        .bot2 {position: absolute; left:0 ;bottom:5px;transform:rotate(-45deg);}
+                    }
+                } 
+                .two { margin-top: 125px;
+                    li{ margin:30px 0 0 83px;
+                        span{position: relative; top: 25px; left:-27px;
+                        }
+                        a{display: block; color: #fff;}
+                    }
+                }
+                .three { margin-top: 150px;
+                    .face{ display: flex;
+                        li{margin-left: 34px;
+                            span {color: #fff;}
+                        }
+                    }
+                    p{margin:0 15px 104px 34px; line-height: 34px; color: #fff; font-size: 13px;}
+                }
+            }
+            .sideM.move { right: 0;}      
+        }
+    }
+    #header.fixer{position: fixed; top:0; bottom: unset; display: block;
+        .center2 { width: 100%; border-radius: 0;}
+    }
+    .container {  
+        .cont1 { 
+            .slideWrap{width: 100%;
+                
+            }
+           
+        }
+        .cont2 { 
+            .center {  width: 90%; margin: 0 auto; 
+                
+                .image1{ 
+                }
+                .silder {width: 90%; height: 407px; 
+                    
+                    .view{
+                        
+                        .pto3{
+                            div { width: 33.333333%;
+                                a {
+                                    img{width: 100%; height: 405px;}   
+                                }
+                            &:nth-child(4){ display: none;}      
+                                  
+                            }
+                        }
+                    }
+                    .btns2{ 
+                        div{}
+                        .prevBtn2{  left:-50px; font-size: 30px;}
+                        .nextBtn2{ right: -50px; font-size: 30px;}    
+                    }
+                    
+                }
+    
+            }
+            .cont2center { width: 90%; 
+                
+                
+                .silder2 {width: 90%; 
+                        
+                    .view2{
+                        
+                        .pto4{
+                            div { width: 33.333333%;
+                                a {
+                                    img{width: 100%; height: 405px;}   
+                                }
+                            &:nth-child(4){ display: none;}      
+                                  
+                            }
+                        }
+                    }
+                    .btns22{ 
+                        div{}
+                        .prevBtn22{  left:-50px; font-size: 30px;}
+                        .nextBtn22{ right: -50px; font-size: 30px;}    
+                    }
+                    
+                }
+            }
+        }
+        
+        .cont4 { 
+            
+        }
+        .cont6 {  padding: 300px 0;
+            .contcenter6 { width: 80%; margin: 0 auto;
+                .menus { width: 100%; display: flex; flex-wrap: wrap; justify-content: center;
+                    .rightnews {  width: 40%; margin: 3% 2%;  display: none;
+                        .tsdf { 
+                            .tewd {
+                                .qwer12 {
+                                    .sub2 {
+                                        
+                                    }
+                                    #title { color: #000; margin: 15px 0; font-weight: bold;}
+                                }
+                                .sub22 {
+                                    .qwer122 { width: 100%;
+                                        img { width: 100%; height: 100%; border-radius: 20px;}
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(1),    
+                        &:nth-child(2),    
+                        &:nth-child(3),    
+                        &:nth-child(4){ display: block;}  
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+    .footer { 
+        .foo {  display: flex; width: 90%; margin: 0 auto; justify-content: space-between; margin: 0 auto;
+            
+        }
+        .foobot { width: 90%; margin: 0 auto; display: flex; justify-content: center;
+            .menu2 { 
+               
+            }
+        }
+        .footend { width: 90%; margin: 0 auto; border-top :1px solid #fff;  
+        }  
+    }
+ }
+
+ @media screen and (max-width:930px){
+    #header { 
+    
+    
+        .samsung {   width: 100%;
+            .center2 { width: 100%; display: flex; justify-content: space-between;
+    
+                
+                     
+                .logo { margin-left: 50px;
+                    h2 { 
+                        a{}
+                        
+                }
+                }
+                .gnbb { display: none; 
+                    
+                    > li { 
+                        
+                        
+                        
+                        a {   }
+                    }  
+                }
+                .logia { display: none;}
+                
+            }    
+            
+            
+        }
+    }
+   
+    .container {  
+        .cont1 { 
+            .slideWrap{width: 100%;
+                
+            }
+           
+        }
+        .cont2 { 
+            .center {  width: 90%; margin: 0 auto; 
+                
+                .image1{ 
+                }
+                .silder {width: 90%; height: 407px; 
+                    
+                    .view{
+                        
+                        .pto3{
+                            div { width: 48%;
+                                a {
+                                    img{width: 100%; height: 405px;}   
+                                }
+
+                            &:nth-child(3),    
+                            &:nth-child(4){ display: none;}      
+                                  
+                            }
+                        }
+                    }
+                    .btns2{ 
+                        div{}
+                        .prevBtn2{  left:-50px; font-size: 30px;}
+                        .nextBtn2{ right: -50px; font-size: 30px;}    
+                    }
+                    
+                }
+    
+            }
+            .cont2center { width: 90%; 
+                
+                
+                .silder2 {width: 90%; 
+                        
+                    .view2{
+                        
+                        .pto4{
+                            div { width: 48%;
+                                a {
+                                    img{width: 100%; height: 405px;}   
+                                }
+
+                            &:nth-child(3),    
+                            &:nth-child(4){ display: none;}      
+                                  
+                            }
+                        }
+                    }
+                    .btns22{ 
+                        div{}
+                        .prevBtn22{  left:-50px; font-size: 30px;}
+                        .nextBtn22{ right: -50px; font-size: 30px;}    
+                    }
+                    
+                }
+            }
+        }
+        
+        .cont3 { 
+            .center5{ 
+                .portfolio { width: 80%;
+                    
+                    .box12 { 
+                        
+                        .all {width: 31.333333%; margin: 1%; position: relative;
+                            
+                            img {width: 100%; height: 100%;}
+                            
+                            
+                            &:hover .bg {background:rgba(0,0,0,0.6);opacity:1;z-index: 55;     
+                            }
+                            .bg2{ width:100%; padding:27px 0; position: absolute; background-color:rgba(0,0,0,0.7); color: #fff; 
+                                  opacity: 0.6;left:0; bottom:0px; transition:all 0.5s; 
+                                p {margin-left: 15px; line-height: 26px; height: 42px;
+                                    display: flex; align-items: center;
+                                }
+                            }
+                                
+                            &:hover .bg2{bottom: -96px; }
+    
+                            
+                        }
+                        .small {height: 300px;}
+                        .big { height: 300px;
+                           
+                        }
+                        .wide { width: 64.666666%; height: 300px;
+                            
+                        }
+                        
+    
+                    }
+                }
+            } 
+    
+        }
+        .cont4 { 
+            
+        }
+        .cont6 {  
+            .contcenter6 { 
+                .menus { 
+                    .rightnews {  
+                        .tsdf { 
+                            .tewd {
+                                .qwer12 {
+                                    .sub2 {
+                                        
+                                    }
+                                    #title { font-size: 13px;}
+                                }
+                                .sub22 {
+                                    
+                                }
+                            }
+                        }
+                       
+                    }
+                    
+                }
+                
+            }
+        }
+        
+    }
+    .footer { 
+        .foo {  display: flex; width: 90%; margin: 50px auto; flex-direction: column;
+            .fooleft { margin-top: 50px;}
+            
+        }
+        .foobot { width: 90%; margin: 50px auto; display: flex; justify-content: center;
+            .menu2 { 
+               
+            }
+        }
+        .footend { width: 90%; margin: 0 auto; border-top :1px solid #fff;  
+        }  
+    }
+ }
+
+ @media screen and (max-width:540px){
+    #header { 
+    
+    
+        .samsung {   width: 100%;
+            .center2 { width: 100%; display: flex; justify-content: space-between;
+    
+                
+                     
+                .logo { margin-left: 50px;
+                    h2 { 
+                        a{}
+                        
+                }
+                }
+                .gnbb { display: none; 
+                    
+                    > li { 
+                        
+                        
+                        
+                        a {   }
+                    }  
+                }
+                
+            }
+            
+            
+        }
+    }
+   
+    .container {  
+        .cont1 { 
+            .slideWrap{width: 100%;
+                
+            }
+           
+        }
+        .cont2 { 
+            .center {  width: 90%; margin: 0 auto; 
+                
+                .image1{ 
+                }
+                .silder {width: 90%; height: 407px; 
+                    
+                    .view{
+                        
+                        .pto3{
+                            div { width: 100%;
+                                a {
+                                    img{width: 100%; height: 405px;}   
+                                }
+
+                            &:nth-child(2),    
+                            &:nth-child(3),    
+                            &:nth-child(4){ display: none;}      
+                                  
+                            }
+                        }
+                    }
+                    .btns2{ 
+                        div{}
+                        .prevBtn2{  left:-25px; font-size: 30px;}
+                        .nextBtn2{ right: -25px; font-size: 30px;}    
+                    }
+                    
+                }
+    
+            }
+            .cont2center { width: 90%; 
+                
+                .image12{ width: 90%; margin: 50px auto; background-position: center; 
+                   
+                }
+                .silder2 {width: 90%; 
+                        
+                    .view2{
+                        
+                        .pto4{
+                            div { width: 100%;
+                                a {
+                                    img{width: 100%; height: 405px;}   
+                                }
+
+                            &:nth-child(2),    
+                            &:nth-child(3),    
+                            &:nth-child(4){ display: none;}      
+                                  
+                            }
+                        }
+                    }
+                    .btns22{ 
+                        div{}
+                        .prevBtn22{  left:-25px; font-size: 30px;}
+                        .nextBtn22{ right: -25px; font-size: 30px;}    
+                    }
+                    
+                }
+            }
+        }
+        .cont3 { 
+            .center5{ 
+                .portfolio { width: 80%;
+                    
+                    .box12 { 
+                        .all {  width: 48%; margin: 1%;
+                            .bg{ 
+                               
+                                h2{font-size: 12px;
+                                    &:hover{color: yellow;}
+                                }
+                                .appds {}
+                                .tessd { 
+                                    .textde { }
+                                    p { font-size: 12px;}
+                                    .sdsa { font-size: 12px;}
+                                    
+                                } 
+                                .clasds { margin-top: 28px;} 
+                                .gsdd { margin-top: 150px;}
+                                
+                                p{color: #fff; font-weight: bold; margin: 18px 0 28px 0;}
+                                a{ font-size: 12px; display: flex; justify-content: center; align-items: center; width: 100px; }
+                            }
+                            &:hover .bg {background:rgba(0,0,0,0.6);opacity:1;z-index: 55;     
+                            }
+                            .bg2{ width:100%; padding:27px 0; position: absolute; background-color:rgba(0,0,0,0.7); color: #fff; 
+                                  opacity: 0.6;left:0; bottom:0px; transition:all 0.5s; 
+                                p {margin-left: 15px; line-height: 26px; height: 42px;
+                                    display: flex; align-items: center;
+                                }
+                            }
+                        }
+                         
+                        .small {height: 300px;}
+                        .big { height: 300px;
+                           
+                        }
+                        .wide { width: 48%; height: 300px;
+                            
+                        }
+                    }
+                }
+            } 
+        }
+        .cont4 { 
+            
+        }
+        .cont6 {  
+            .contcenter6 { 
+                .menus { 
+                    .rightnews {  
+                        .tsdf { 
+                            .tewd {
+                                .qwer12 {
+                                    .sub2 {
+                                        
+                                    }
+                                    #title { font-size: 10px;}
+                                }
+                                .sub22 {
+                                    
+                                }
+                            }
+                        }
+                       
+                    }
+                    
+                }
+                
+            }
+        }
+        
+    }
+    .footer { 
+        .foo {  display: flex; width: 90%; margin: 50px auto; flex-direction: column;
+            .fooleft { margin-top: 50px;}
+            
+        }
+        .foobot { width: 90%; margin: 50px auto; display: flex; justify-content: center;
+            .menu2 { 
+               
+            }
+        }
+        .footend { width: 90%; margin: 0 auto; border-top :1px solid #fff;  
+        }  
+    }
+}
+
+// 게시글 상세페이지
+@media screen and (max-width:1200px){ 
+    
+    #container2 {width: 100%; 
+        
+        .brd_centerload {  width: 80%;  margin: 100px auto; 
+                
+            
+        }
+        .brqe { margin: 50px auto; width: 82%; 
+           
+    
+        }
+        .comment {  width: 80%;  
+            
+        }
+        .connetw{  
+            .commentss {width: 80%;  
+                
+            }
+            .comment_box {   width: 80%; 
+                
+            }  
+        }
+    }
+}
+@media screen and (max-width:1000px){ 
+    #container2 {
+        
+        .brd_centerload {  width: 80%; 
+            
+        }
+        .brqe {  width: 81%; 
+           
+    
+        }
+        .comment {  width: 80%; 
+           
+        }
+        .connetw{  
+            .commentss {width:80%; 
+               
+            }
+            .comment_box {   width: 80%; 
+            }  
+        }
+    }
+}
+@media screen and (max-width:768px){
+    #container2 {
+        
+        .brd_centerload {  width: 80%; 
+            
+            
+            
+        }
+        .brqe {  width: 80%; 
+           
+        }
+        .comment {  width: 80%;  
+           
+        }
+        .connetw{  
+            .commentss {width: 80%;  
+               
+            }
+            .comment_box {   width: 80%; 
+            }  
+        }
+    }
+}
+@media screen and (max-width:580px){ 
+    #container2 {
+        
+        .brd_centerload {  width: 90%; margin: 100px auto; 
+           
+        }
+        .brqe {  width: 90%;  
+           
+    
+        }
+        .comment {  width: 90%;  
+           
+        }   
+        .connetw{  
+            .commentss {width: 90%;   
+                
+            }
+            .comment_box {   width: 90%; }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,46 @@
+<div class="condition">
+    <% if(!userData) { %> <!-- 회원정보 프로퍼티가 없을때 -->
+    <i class="fa-solid fa-right-to-bracket arr"></i>
+    <a class="loginuser loj" href="/login">로그인</a>
+    <i class="fa-solid fa-registered arr"></i>
+    <a class="logina loj" href="/join">회원가입</a>
+    <% } else { %>
+    <div class="name loj"><a href="<%- userData.joinid == "admin!12" ?  "/admin/prdlist" : "/mypage" %>"><%- userData.joinid %>님</a></div> 
+    <a class="loginb loj" href="/logout">로그아웃</a>
+    <% } %>
+</div>
+
+<div class="cont4 section">
+    <div class="center6">
+        <div class="silder2">
+            <div class="view">
+                <div class="box10">
+                    <img src="img/bb1.jpg">
+                    <h2></h2>
+                    <p class="envato"></p>
+                    <p class="lorem"><br>
+                    </p>
+                </div>
+                <div class="box10">
+                    <img src="img/bb2.jpg">
+                    <h2></h2>
+                    <p class="envato"></p>
+                    <p class="lorem"><br>
+                    </p>
+                </div>
+                <div class="box10">
+                    <img src="img/bb3.jpg">
+                    <h2></h2>
+                    <p class="envato"></p>
+                    <p class="lorem"><br>
+                         <br>
+                    </p>
+                </div>
+            </div>
+            <ul class="circleBtn2">
+                <li class="on"><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
