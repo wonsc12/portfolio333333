@@ -3210,9 +3210,15 @@ body {
   left: -100px;
   font-size: 30px;
 }
+.container .cont2 .cont2center .silder2 .btns22 .prevBtn22 i {
+  color: #000;
+}
 .container .cont2 .cont2center .silder2 .btns22 .nextBtn22 {
   right: -100px;
   font-size: 30px;
+}
+.container .cont2 .cont2center .silder2 .btns22 .nextBtn22 i {
+  color: #000;
 }
 .container .cont2 .cont2center .silder2 .circleBtn22 {
   position: absolute;

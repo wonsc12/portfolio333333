@@ -1626,8 +1626,12 @@
                 }
                 .btns22{ 
                     div{position: absolute; top:50%; transform: translateY(-50%);z-index: 5;}
-                    .prevBtn22{  left:-100px; font-size: 30px;}
-                    .nextBtn22{ right: -100px; font-size: 30px;}    
+                    .prevBtn22{  left:-100px; font-size: 30px;
+                        i { color: #000;}
+                    }
+                    .nextBtn22{ right: -100px; font-size: 30px;
+                        i { color: #000;}
+                    }    
                 }
                 .circleBtn22{ position: absolute; left:50%; bottom: -80px; transform: translateX(-50%);
                     z-index: 4;display: flex;
