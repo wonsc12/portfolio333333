@@ -82,7 +82,7 @@
                  
             .logo { display: flex; align-items: center; text-align: center;
                 h2 { 
-                    a{ color: #000;}
+                    a{ color: #000; font-weight: bold;}
                 }
             }
             .gnbb { display: flex; justify-content: center; text-align: center;
@@ -91,7 +91,7 @@
                     
                     
                     
-                    a { text-align: center; color: #000;  }
+                    a { text-align: center; color: #000;  font-weight: bold;}
                 }  
             }
             .logia { background-color: #fff; display: flex; justify-content: center; margin-left: 50px;
@@ -158,9 +158,11 @@
 
         }
      }
+
+    
      // header2
 
-     #header2 { width:100%;   
+     #header2 { width:100%;    
 
         
         
@@ -181,7 +183,14 @@
                         
                         
                         
-                        a { text-align: center; color: #000;  }
+                        a { text-align: center; color: #000;  font-weight: bold; position: relative;
+                            &::after{content:""; display:block; height:2px;
+                                background:#000; position:absolute;left:50%;
+                                transform:translateX(-50%);top:25px;
+                                width:0%;transition:all 0.5s;  
+                            }  
+                        }
+                    &:hover a::after { width: 100%;}    
                     }  
                 }
                 .logia { background-color: #fff; display: flex; justify-content: center;
@@ -280,7 +289,7 @@
         
                            
                          
-                    .logo { margin-left: 50px;
+                    .logo { margin-left: 50px; margin: 15px 40px;
                         
                     }
                     .gnbb { display: none; 
@@ -1236,7 +1245,7 @@
 
     }
     .comment {  width: 1100px;  margin:  60px auto;
-        textarea { padding:10px 0 0 10px ; height:80px; resize: none; margin-top: 35px; width: 50%;}   
+        textarea { border: none; border-bottom: 1px solid #000; padding:10px 0 0 10px ; height:20px; resize: none; margin-top: 35px; width: 50%;}   
 
         .sigs {     margin-top: 34px;
             .btn { width: 170px; height: 44px; border: 1px solid #acacac; background-color: #fff; color: #000;;
@@ -1450,7 +1459,7 @@
                  
             .logo { display: flex; align-items: center; text-align: center;
                 h2 { 
-                    a{color: #000;}
+                    a{color: #000; }
                     
             }
             }
@@ -1464,7 +1473,8 @@
                         &::after{content:""; display:block; height:2px;
                             background:#000; position:absolute;left:50%;
                             transform:translateX(-50%);top:25px;
-                            width:0%;transition:all 0.5s;  }  
+                            width:0%;transition:all 0.5s;  
+                        }  
                     }
                     
                 &:hover a::after { width: 100%;}    
@@ -1501,7 +1511,7 @@
             .btn.chg .mid {transform: translateX(10px);opacity: 0;}
             .btn.chg .bot {position: absolute; left:0 ;bottom:0;transform:rotate(-45deg);}
         }
-        .sideM{  width: 280px; height: 100vh; position: fixed;right: -280px;top: 0; background-color: #dc3545;transition: all 0.5s;
+        .sideM{  width: 280px; height: 100vh; position: fixed;right: -280px;top: 0; background-color: #000;transition: all 0.5s;
             
             
             .linebtn{ position: relative; display: flex; ; flex-direction: column; 
@@ -1512,11 +1522,17 @@
                     .bot2 {position: absolute; left:0 ;bottom:5px;transform:rotate(-45deg);}
                 }
             } 
-            .two { margin-top: 125px;
+            .two { margin-top: 55px;
                 li{ margin:30px 0 0 83px;
                     span{position: relative; top: 25px; left:-27px;
                     }
                     a{display: block; color: #fff;}
+                }
+            }
+            .login { margin: 0 auto; display: flex; justify-content: center;
+                .condition { 
+                    .loj { }
+
                 }
             }
             .three { 
@@ -1525,7 +1541,7 @@
                         i {color: #fff;}
                     }
                 }
-                p{margin:0 0 104px 34px; line-height: 34px; color: #fff; font-size: 13px;}
+                p{margin:0 0 84px 34px; line-height: 34px; color: #fff; font-size: 13px;}
             }
         }
         .sideM.move { right: 0;}      
@@ -1556,7 +1572,7 @@
             .prevBtn{position: absolute; background-image: url(../img/leftBtn.png); width: 100px; height: 100px; background-repeat: no-repeat;
                 left:50px; top:50%; transform: translateY(-50%);  z-index: 99;}
             .nextBtn{position: absolute; background-image: url(../img/rightBtn.png); width: 100px; height: 100px; background-repeat:no-repeat;
-                right:50px; top:50%; transform: translateY(-50%); z-index: 99;}     
+                right:0px; top:50%; transform: translateY(-50%); z-index: 99; }     
         }
     }
     .cont2 { padding: 200px 0;  
@@ -1606,7 +1622,7 @@
             .tvpro{margin: 30px 0; text-align: center;
                 h2 { font-size: 40px;}
             }
-            .image12{ margin: 50px auto;width: 550px; height: 630px; background-image:url(../img/pp1.jpg);
+            .image12{ margin: 50px auto;width: 450px; height: 650px; background-image:url(../img/ipo25.png);
                 background-size: cover; background-repeat: no-repeat; 
             }
             .silder2 {position: relative;margin: 0 auto;width: 80%; height: 407px; display: flex; justify-content: center;
@@ -1881,21 +1897,29 @@
                 
                 
                 .linebtn{ position: relative; display: flex; ; flex-direction: column; 
-                    .btn2{ display: block ; position: absolute; right: 10px; top:12%; transform: translateY(-50%);
+                    .btn2{ display: block ; position: absolute; right: 20px; top:8%; transform: translateY(-50%);
                         .line { display: block; width: 35px; height: 2px; background-color: #fff;transition: all 0.5s;}
                         .top2 {position: absolute; left:0 ;top:5px;transform:rotate(45deg);}
                         .mid2 {transform: translateX(10px);opacity: 0;margin: 5px 0;}
                         .bot2 {position: absolute; left:0 ;bottom:5px;transform:rotate(-45deg);}
                     }
                 } 
-                .two { margin-top: 125px;
+                .two { margin-top: 55px;
                     li{ margin:30px 0 0 83px;
                         span{position: relative; top: 25px; left:-27px;
                         }
                         a{display: block; color: #fff;}
                     }
                 }
-                .three { margin-top: 150px;
+                .login { margin: 0 auto; display: flex; justify-content: center;
+                    .condition {  margin-top: 50px; display: flex;
+                        .loj { border-radius: 15px; justify-content: center; display: flex;align-items: center; text-align: center; margin: auto 0; width: 100px; height: 40px; color: #fff; border: 1px solid #fff;
+                        &:hover { background-color: #fff; color: #000;}
+                        }
+    
+                    }
+                }
+                .three { margin-top: 120px;
                     .face{ display: flex;
                         li{margin-left: 34px;
                             span {color: #fff;}
@@ -2270,7 +2294,7 @@
             }
             .cont2center { width: 90%; 
                 
-                .image12{ width: 90%; margin: 50px auto; background-position: center; 
+                .image12{ width: 98%; margin: 50px auto; background-position: center; 
                    
                 }
                 .silder2 {width: 90%; 
@@ -2349,15 +2373,15 @@
         }
         .cont6 {  
             .contcenter6 { 
-                .menus { 
-                    .rightnews {  
+                .menus { display: flex; flex-direction: column;
+                    .rightnews {   width: 85%; margin: 25px auto;
                         .tsdf { 
                             .tewd {
                                 .qwer12 {
                                     .sub2 {
                                         
                                     }
-                                    #title { font-size: 10px;}
+                                    #title { }
                                 }
                                 .sub22 {
                                     
@@ -2380,7 +2404,9 @@
         }
         .foobot { width: 90%; margin: 50px auto; display: flex; justify-content: center;
             .menu2 { 
-               
+                li {
+                    a { font-size: 15px;}
+                }
             }
         }
         .footend { width: 90%; margin: 0 auto; border-top :1px solid #fff;  
@@ -2481,5 +2507,163 @@
     }
 }
 
+
+// 소개페이지
+#Wrap { background-color: #333; display: flex;width: 100%; height: 100vh;
+    .coda { width: 20%;  display: flex;  flex-direction: column;
+        .icon { display: flex; justify-content: center; height: 100%;
+            li{ margin: 0 20px;
+                i{ font-size: 30px; color: #fff;}
+            }
+        }
+        .ulmenus { margin: 250px auto; width: 100%;  
+            .memeus {text-align: center;
+                li { text-align: center; line-height: 70px; width: 100%;
+                    a { color: #fff; font-size: 30px;}
+                    &:nth-child(2) {  }
+                }
+                
+            }
+        }
+    }
+    
+        
+    
+    #container { width: 80%;display: flex; background-color: #222;
+        
+        .cont1 { width: 100%; display: flex; margin-top: 256px; 
+            .box { width:25% ; margin: 0 auto; transition:all 1s;  position: relative; z-index: 7;
+                .textbox {
+                    h2 { color: #fff; font-size: 30px; transition: all 1s;
+
+                    &::after {transition: all 1s; content: ""; display:block; width:27px ; height:2px; background-color: #fff; margin: 30px 0 43px 0;  }
+                    }
+                    p {  margin-bottom: 230px;color: #fff;}
+                }
+                .space { width: 260px; height:145px; display: flex;
+                    video {width: 100%; height:100%; filter: saturate(0%);transition: all 1s; transform-origin: left bottom;}
+                }
+            &:hover {width:40%; }    
+            &:hover video { filter: saturate(100%); transform: scale(2);}    
+            
+            &::before { content: ""; position: absolute; left:-250px; top:-54px; 
+                opacity: 0; transition: all 1s;   
+                width: 95%; height: 95%; background-color: #444 rgba(0,0,0,0);}
+            &:hover::before  { opacity: 1; left: -25px;background-color:  rgba(0,0,0,0.3);}
+            &:hover .textbox h2::after  { width: 54px; background-color: orange;}
+            &:hover .textbox h2  { font-size: 40px;}
+            
+            }
+        }
+    }
+    .side { opacity: 0; display: flex; width: 100%; height: 100vh; position: absolute; left: -100%;top: 0; 
+        transition: all 3s; z-index: 10; background-color: #222;
+        .text {width: 25%; height: 100%; margin: 195px 55px 0 413px ;
+            h1 {color: #fff;font-size: 43px;}
+            p {color: #fff; margin: 50px 0 70px 0; line-height: 23px;}
+            a{
+                span {color:orangered;}
+            }
+        }
+        .image {width: 72%;height: 100%; margin-right: 132px;
+            video {width: 100%; height: 100%;}
+        }
+    }
+    .side.on { left:0; opacity: 1;}
+}
+
+
+// 소개페이지 
+
+@media screen and (max-width:1300px){
+
+    #Wrap { background-color: #333; display: flex;width: 100%; height: 100vh;
+        .coda { width: 20%; display: none;  flex-direction: column;
+            
+        }
+        
+            
+        
+        #container { width: 100%;display: flex; background-color: #222;
+            
+            .cont1 { width: 100%; display: flex;  flex-direction: column; margin:  auto; 
+                .box { width:25% ; margin: 50px auto; transition:all 1s;  position: relative; z-index: 7;
+                    .textbox {  
+                        h2 { color: #fff; font-size: 30px; transition: all 1s; margin-bottom: 10px;
+    
+                        &::after {transition: all 1s; content: ""; display:none; width:27px ; height:2px; background-color: #fff; margin: 30px 0 43px 0;  }
+                        }
+                        p {  margin-bottom: 30px;color: #fff; display: none;}
+                    }
+                    .space { width: 260px; height:135px; display: flex;
+                      
+                    }
+                &:hover {width:40%; }    
+                &:hover video { filter: saturate(100%); transform: scale(1);}    
+                
+                &::before { content: ""; position: absolute; left:-250px; top:-54px; 
+                    opacity: 0; transition: all 1s;   
+                    width: 95%; height: 95%; background-color: #444 rgba(0,0,0,0);}
+                &:hover::before  { opacity: 1; left: -25px;background-color:  rgba(0,0,0,0.3);}
+                &:hover .textbox h2::after  { width: 54px; background-color: orange;}
+                &:hover .textbox h2  { font-size: 40px;}
+                
+                }
+            }
+        }
+        .side { z-index: 44; opacity: 0; display: flex; flex-direction: column; width: 100%; height: 100vh; position: absolute; left: -100%;top: 0; 
+            transition: all 3s; z-index: 10; background-color: #222;
+            .text {width: 25%; height: 100%; margin: 195px 0px 30px 113px ;
+                h1 {color: #fff;font-size: 43px;}
+                p {color: #fff; margin: 50px 0 70px 0; line-height: 23px;}
+                a{
+                    span {color:orangered;}
+                }
+            }
+            .image {width: 86%;height: 500px; margin: 0px auto;
+                video {width: 100%; height: 100%;}
+            }
+        }
+        .side.on { left:0; opacity: 1;}
+    }
+        
+} 
+
+@media screen and (max-width:830px){
+
+    #Wrap { 
+        
+        
+            
+        
+        #container { width: 100%;display: flex; background-color: #222;
+            
+            .cont1 { width: 100%; display: flex; flex-direction: column; margin: 20px -0px; 
+                .box { width:25% ; margin: 50px 120px; transition:all 1s;  position: relative; z-index: 7;
+                    .textbox {  
+                        h2 { color: #fff; font-size: 30px; transition: all 1s; margin-bottom: 10px;
+    
+                        &::after {transition: all 1s; content: ""; display:none; width:27px ; height:2px; background-color: #fff; margin: 30px 0 43px 0;  }
+                        }
+                        p {  margin-bottom: 30px;color: #fff; display: none;}
+                    }
+                    .space { width: 260px; height:135px; display: flex;
+                      
+                    }
+                }
+            }
+        }
+        .side { 
+            .text {width: 45%; height: 100%; margin: 195px 0px 0 113px ;
+               
+            }
+            .image {
+               
+            }
+        }
+        
+    }
+        
+} 
 
 

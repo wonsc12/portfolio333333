@@ -736,7 +736,7 @@ app.get("/eventupt/:no",function(req,res){
   // db안에 해당 게시글번호에 맞는 데이터를 꺼내오고 ejs파일로 응답
   // input , textarea에다가 작성내용 미리 보여줌
   db.collection("ex1_event").findOne({brdid:Number(req.params.no)},function(err,result){
-      res.render("eventuptview",{brdData:result,userData:req.user});
+      res.render("eventuptview",{eventData:result,userData:req.user});
   });
 });
 
@@ -1125,6 +1125,13 @@ app.get("/delete/:no",function(req,res){
 //     });
   
 // });
+
+//게시글 작성 페이지 get 요청
+app.get("/appletroduce",function(req,res){
+  //게시글 작성페이지 ejs 파일 응답
+  res.render("appletroduce",{userData:req.user});
+});
+
 
 
 

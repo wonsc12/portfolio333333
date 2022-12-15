@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개페이지</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="js/sideBtn.js"defer></script>
+    
+</head>
+<body>
+    <%- include("common/header2.ejs") %>
+    <div id="Wrap">
+        <div class="coda">
+                
+                <div class="ulmenus">
+                    <ul class="memeus">
+                        <li class="on"><a class="fsdf" href="/menu/apple">아이폰</a></li>
+                        <li><a href="/menu/ipot">아이팟</a></li>
+                        <li><a href="/menu/watch">애플워치</a></li>
+                    </ul>
+                </div>
+                <ul class="icon">
+                    <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        <div id="container">
+            
+            <div class="cont1">
+                <div class="box">
+                    <div class="textbox">
+                        <h2>i phone</h2>
+                        <p>iPhone 14 Pro Max 128GB<br>
+                        </p>
+                    </div>
+                    <div class="space">   
+                        <video src="img/iphone.mp4" muted loop></video>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="textbox">
+                        <h2>Watch</h2>
+                        <p>Apple Watch Ultra GPS + Cellular, 49mm<br>
+                        </p>
+                    </div>
+                    <div class="space">  
+                        <video src="img/watch.mp4" muted loop></video>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="textbox">
+                        <h2>AirPods</h2>
+                        <p>AirPods Pro 에어팟 프로 (2세대)<br>
+                        </p>
+                    </div>
+                    <div class="space">  
+                        <video class="spc" src="img/ipot.webm" muted loop></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side">
+            <div class="text">
+                 <h1>test</h1>
+                <p>test</p>
+                <a href="#"><span class="closeBtn">CLOSE</span></a>
+            </div>
+            <div class="image">
+                <video src="img/iphone.mp4" muted loop></video>
+            </div>    
+        </div>
+        
+    </div>
+    <%- include("common/footer.ejs") %>
+    <script>
+        const box = document.querySelectorAll(".box");
+        const sideve = document.querySelector(".side");
+        const closeBtn = document.querySelector(".closeBtn");
+
+        box.forEach(function(item,index){
+            item.addEventListener("mouseenter",function(e){
+
+                e.currentTarget.querySelector("video").play();
+            });
+
+            item.addEventListener("mouseleave",function(e){
+
+                e.currentTarget.querySelector("video").pause();
+            });
+        
+            item.addEventListener("click",function(e){
+
+                let title = e.currentTarget.querySelector("h2").innerText;
+                let txt = e.currentTarget.querySelector("p").innerText;
+                let vidSrc = e.currentTarget.querySelector("video").getAttribute("src");
+                    console.log(title);                   
+                    console.log(txt);                   
+                    console.log(vidSrc);  
+                
+                sideve.querySelector("h1").innerText = title;
+                sideve.querySelector("p").innerText = txt;
+                sideve.querySelector("video").setAttribute("src",vidSrc);
+                sideve.querySelector("video").play();
+
+                sideve.classList.add("on");
+                
+                
+                }); 
+           
+
+        });
+        closeBtn.addEventListener("click",function(){
+            
+            sideve.classList.remove("on");
+
+        });  
+    </script>   
+</body>
+</html>
