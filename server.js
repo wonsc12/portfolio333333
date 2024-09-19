@@ -19,7 +19,7 @@ app.use(session({secret : 'secret', resave : true, saveUninitialized: false}));
 app.use(passport.initialize());
 app.use(passport.session());
 
-// 파일업로드해서 처리할 경로 요청 
+// 파일업로드해서 처리할 경로 요청
 // upload.single()함수는 multer라이브러리에서 제공하는 함수
 // single() <-- 안에 적을 값은 input type="file" 태그의 name값  
 const storage = multer.diskStorage({
